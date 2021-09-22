@@ -15,7 +15,7 @@ Use Case diagram on Alerting Distracted Driver (Self-Drive Safety Tests) --> Jos
 
 
 **Use Case diagram on Steering/Braking (Addresses Vehicle Actuators) --> Kyle:**
-![unknown](https://user-images.githubusercontent.com/57100645/134406242-c0b177ca-17c1-44e6-8fc7-49ec8c776d43.png)
+![Openpilot Misuse Case Diagram](https://user-images.githubusercontent.com/61159481/134416417-b0ee03ca-2880-436c-8640-f78c32f40a61.png)
 
 **Use Case diagram on Car location and surroundings (Addresses GPS Satellite) --> Dip:**
 ![location](https://user-images.githubusercontent.com/25081252/134412296-243eb8c4-ed5c-41e5-98c1-89b0988839b6.png)
