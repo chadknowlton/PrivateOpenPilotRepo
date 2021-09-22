@@ -22,7 +22,8 @@ Use Case diagram on Alerting Distracted Driver (Self-Drive Safety Tests) --> Jos
 
 
 **Use Case diagram on Wifi update of software (Installer/Updater Bash Scripts) --> Jack:**
-![InstallerBashUpdater_Usecase drawio](https://user-images.githubusercontent.com/57100645/134409737-4bc44f73-a636-44d8-ba64-b90549b73825.png)
+![InstallerBashUpdater_UseCase drawio (1)](https://user-images.githubusercontent.com/57100645/134416881-a434363f-a5cb-43ff-b408-e2d94b0fabdb.png)
+
 
 **Use Case diagram on Malicious Drivers/Hijackers (Self-Drive Safety Tests) --> Chad:**
 ![image](https://user-images.githubusercontent.com/46686977/134414326-baad766d-6a09-48c2-a685-47ea3a3c5a15.png)
