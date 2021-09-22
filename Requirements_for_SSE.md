@@ -2,6 +2,8 @@ Part 1: Misuse case notion and quality
 
 Use of proper misuse case notation (as discussed in class).
 Reasoning Quality: Misuse cases reflect reasoning that help derive security requirements --> Kyle
+
+Use Cases
 ![unknown](https://user-images.githubusercontent.com/57100645/134406242-c0b177ca-17c1-44e6-8fc7-49ec8c776d43.png)
 
 
