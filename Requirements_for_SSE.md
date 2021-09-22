@@ -23,6 +23,7 @@ Use Case diagram on Wifi update of software (Installer/Updater Bash Scripts) -->
 ![InstallerBashUpdater_Usecase drawio](https://user-images.githubusercontent.com/57100645/134409737-4bc44f73-a636-44d8-ba64-b90549b73825.png)
 
 Use Case diagram on Malicious Drivers/Hijackers (Self-Drive Safety Tests) --> Chad:
+![image](https://user-images.githubusercontent.com/46686977/134414326-baad766d-6a09-48c2-a685-47ea3a3c5a15.png)
 
 
 Reflection --> Assess alignment of security requirements with advertised features. Review OSS project documentation and codebase to support your observations. --> All
