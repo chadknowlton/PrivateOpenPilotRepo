@@ -1,7 +1,7 @@
 Part 1: Misuse case notion and quality
 
 Use of proper misuse case notation (as discussed in class).
-**Reasoning Quality: Misuse cases reflect reasoning that help derive security requirements --> Kyle**
+**Reasoning Quality: Misuse cases reflect reasoning that help derive security requirements --> Kyle & Dip**
 
 Use Cases:
 
@@ -10,9 +10,6 @@ Use Cases:
 Use Case diagram on Alerting Distracted Driver (Self-Drive Safety Tests) --> Jose
 **Use Case diagram pertaining to cereal internal logging --> Jose**
 ![image](https://user-images.githubusercontent.com/47230603/134416325-1b97d5dc-0662-4dd8-8b90-afb4bf065f22.png)
-
-
-
 
 **Use Case diagram on Steering/Braking (Addresses Vehicle Actuators) --> Kyle:**
 ![Openpilot Misuse Case Diagram](https://user-images.githubusercontent.com/61159481/134416417-b0ee03ca-2880-436c-8640-f78c32f40a61.png)
@@ -34,7 +31,7 @@ Use Case diagram on Alerting Distracted Driver (Self-Drive Safety Tests) --> Jos
  -----------------------------------------------------------------------------------
 Part 2: OSS project documentation review
 
-Review OSS project documentation for security-related configuration and installation issues. **Summarize your observations. --> Chad**
+**Review OSS project documentation for security-related configuration and installation issues. Summarize your observations. --> Chad**
 Security-Related configuration and installation issues
 
 Openpilot software is a powerful tool that has many failsafes in place in order to prevent sudden failure of systems. For example, there are driver awareness sensors to ensure that the driver is actively paying attention and ready to regain control at all times, there is a fast and easy way to retake control over the vehicle, and there is an automatic shut-down feature for the self-driving software in case the sensors fail, or a major component of the software is performing unexpectedly. Below is a diagram illustrating all of the fail-safe features:
@@ -50,10 +47,11 @@ However, the software does do a fantastic job of quickly and safely controlling 
 
 **Planning and Reflection --> Overall team planning and Individual Contribution  --> All**
 
-
-
-
-
 Contributions:
+Chad - Initial part 2 security configuration summary, Use Case Diagram on malicious drivers/hijackers
+Dip - Use case diagram on Car location and surroundings, Overall Use/Misuse case discussion
+Jack - Use case diagram on Wifi update of software, Organization of assignments/meetings
+Jose - Use case diagram pertaining to cereal internal logging, Review & Research for diagrams
+Kyle - Use case diagram on steering/braking, Overall Use/Misuse case discussion
 
 
