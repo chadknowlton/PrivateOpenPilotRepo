@@ -6,6 +6,7 @@ Reasoning Quality: Misuse cases reflect reasoning that help derive security requ
 Use Cases
 ![unknown](https://user-images.githubusercontent.com/57100645/134406242-c0b177ca-17c1-44e6-8fc7-49ec8c776d43.png)
 
+![location drawio](https://user-images.githubusercontent.com/57100645/134406852-6130c7af-ea5d-4926-82f7-fcaa1083c8a6.png)
 
 
 Reflection --> Assess alignment of security requirements with advertised features. Review OSS project documentation and codebase to support your observations. --> All
