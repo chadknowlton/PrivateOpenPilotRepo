@@ -6,9 +6,9 @@ Reasoning Quality: Misuse cases reflect reasoning that help derive security requ
 Use Cases:
 
 
-
-Use Case diagram on Alerting Distracted Driver (Self-Drive Safety Tests) --> Jose
 Use Case diagram pertaining to cereal internal logging --> Jose
+![image](https://user-images.githubusercontent.com/47230603/134416046-5fdc9ac4-befd-4b1c-9c54-cadaea2d7126.png)
+
 
 
 
