@@ -9,6 +9,8 @@ Use Cases
 ![location drawio](https://user-images.githubusercontent.com/57100645/134406852-6130c7af-ea5d-4926-82f7-fcaa1083c8a6.png)
 
 
+![InstallerBashUpdater_Usecase drawio](https://user-images.githubusercontent.com/57100645/134409737-4bc44f73-a636-44d8-ba64-b90549b73825.png)
+
 Reflection --> Assess alignment of security requirements with advertised features. Review OSS project documentation and codebase to support your observations. --> All
 
  -----------------------------------------------------------------------------------
