@@ -8,7 +8,9 @@ Use Cases:
 
 
 Use Case diagram on Alerting Distracted Driver (Self-Drive Safety Tests) --> Jose
-Use Case diagram pertaining to cereal internal logging --> Jose
+**Use Case diagram pertaining to cereal internal logging --> Jose**
+![image](https://user-images.githubusercontent.com/47230603/134416325-1b97d5dc-0662-4dd8-8b90-afb4bf065f22.png)
+
 
 
 
