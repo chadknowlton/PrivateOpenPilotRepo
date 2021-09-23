@@ -44,9 +44,9 @@ However, the software does do a fantastic job of quickly and safely controlling 
 
 ### Planning and Reflection --> Overall team planning and Individual Contribution  --> All
 
-Contributions:
+Contributions:\
 **Chad** - Initial part 2 security configuration summary, Use Case Diagram on malicious drivers/hijackers\
 **Dip** - Use case diagram on Car location and surroundings, Overall Use/Misuse case discussion\
 **Jack** - Use case diagram on Wifi update of software, Organization of assignments/meetings\
 **Jose** - Use case diagram pertaining to cereal internal logging, Review & Research for diagrams\
-**Kyle** - Use case diagram on steering/braking, Overall Use/Misuse case discussion\
+**Kyle** - Use case diagram on steering/braking, Overall Use/Misuse case discussion
