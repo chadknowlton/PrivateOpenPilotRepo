@@ -19,7 +19,7 @@ Should the hijacker manage to get a working connection, however, there should be
 ![InstallerBashUpdater_UseCase drawio (1)](https://user-images.githubusercontent.com/57100645/134416881-a434363f-a5cb-43ff-b408-e2d94b0fabdb.png)
 
 
-### Use Case diagram on Malicious Drivers/Hijackers (Self-Drive Safety Tests) --> Chad:
+### Use Case diagram on External Environment Hazards (Self-Drive Safety Tests) --> Chad:
 ![Malicious Driver drawio](https://user-images.githubusercontent.com/46686977/134443091-e6d81aff-c4f1-4205-bf97-a237a7dbf1e7.png)
 
 
