@@ -23,7 +23,7 @@ Use Case diagram on Alerting Distracted Driver (Self-Drive Safety Tests) --> Jos
 
 
 **Use Case diagram on Malicious Drivers/Hijackers (Self-Drive Safety Tests) --> Chad:**
-![Capture](https://user-images.githubusercontent.com/46686977/134443034-ffacac25-7c04-4989-b0a3-1c888fcaa172.JPG)
+![Malicious Driver drawio](https://user-images.githubusercontent.com/46686977/134443091-e6d81aff-c4f1-4205-bf97-a237a7dbf1e7.png)
 
 
 **Reflection --> Assess alignment of security requirements with advertised features. Review OSS project documentation and codebase to support your observations. --> All**
