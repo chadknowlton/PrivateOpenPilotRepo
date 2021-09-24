@@ -20,7 +20,7 @@ Should the hijacker manage to get a working connection, however, there should be
 
 In the event the comma two device loses the ability to maintain active awareness, we explore the misuse case where am electrical failure inhibits a vehicle stall. This use case starts with the comma two device. The device has the ability to scan for road hazards, monitor vehicle positioning, and has the ability to automatically shut off. The misuse case begins with an electrical failure that results in a vehicular stall. The stall threatens the devices abilities to monitor surroundings. However, the comma two device will detect this stall and automatically disable itself to prevent any conflicts with the vehicles built in emergency systems. 
 
-The driver is the secondary actor in this scenario and has the ability to monitor the surroundings and assume control of the vehicle when a vehicular stall occurs. In this event. the driver detects a stall has occurred and can resume monitoring surrounding and maintaining control of the vehicle.
+The driver is the secondary actor in this scenario and has the ability to monitor the surroundings and assume control of the vehicle when a vehicular stall occurs. In this event the driver detects a stall has occurred and can resume monitoring surrounding and maintain control of the vehicle.
 
 ### Use Case diagram on External Environment Hazards (Self-Drive Safety Tests) --> Chad:
 ![Malicious Driver drawio](https://user-images.githubusercontent.com/46686977/134443091-e6d81aff-c4f1-4205-bf97-a237a7dbf1e7.png)
