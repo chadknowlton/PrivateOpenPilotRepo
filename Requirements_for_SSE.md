@@ -16,7 +16,7 @@ Should the hijacker manage to get a working connection, however, there should be
 
 
 ### Use Case diagram on Wifi update of software (Installer/Updater Bash Scripts) --> Jack:
-![InstallerBashUpdater_UseCase drawio (3)](https://user-images.githubusercontent.com/57100645/134732325-ba0969d1-eeef-4916-9a06-d6fab479e83a.png)
+![InstallerBashUpdater_UseCase drawio (4)](https://user-images.githubusercontent.com/57100645/134732947-d177e379-c2af-4acc-b3b2-20819da68413.png)
 
 In the event the comma two device loses the ability to maintain active awareness and connection for updates, we explore the misuse case where am electrical failure inhibits a vehicle stall. This use case starts with the comma two device. The device has the ability to scan for road hazards, monitor vehicle positioning, and has the ability to automatically shut off. The misuse case begins with an electrical failure that results in a vehicular stall. The stall threatens the devices abilities to monitor surroundings. However, the comma two device will detect this stall and automatically disable itself to prevent any conflicts with the vehicles built in emergency systems. The automatic shutoff will also maintain the cache and memory. This will prevent device corruption in the event that stall occurs during an update.
 
@@ -53,5 +53,4 @@ Contributions:\
 **Jack** - Use case diagram on Wifi update of software, Organization of assignments/meetings\
 **Jose** - Use case diagram pertaining to cereal internal logging, Review & Research for diagrams\
 **Kyle** - Use case diagram on steering/braking, Overall Use/Misuse case discussion
-
 
