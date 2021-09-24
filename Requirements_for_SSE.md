@@ -12,7 +12,13 @@ For the steering/braking use diagram, we explore the misuse case where a malicio
 Should the hijacker manage to get a working connection, however, there should be preemptive counters within the openpilot software to mitigate any further misuses. Due to the nature of openpilot being a critical system, having an environment which allows for code execution is not acceptable. As a result, much of the development effort has been put towards preventing this altogether rather than trying to sandbox everything. Even if a hijacker was able to execute code giving them remote control of the vehicle, the openpilot software has been developed to always allow for the driver to retake control immediately. The software also cannot alter the vehicle trajectory in a way which would be too quick for the driver to react safely in these cases.
 
 ### Use Case diagram on Car location and surroundings (Addresses GPS Satellite) --> Dip:
-![location](https://user-images.githubusercontent.com/25081252/134412296-243eb8c4-ed5c-41e5-98c1-89b0988839b6.png)
+![gpstracker](https://user-images.githubusercontent.com/25081252/134748902-e5ed8089-cf9e-430e-80f1-163f011f9cf7.png)
+
+OpenPilot uses a camera and GPS satellite to detect car location and its surroundings. We explore that hackers can decode the coordinate information and locate the driver's current location. This use-case starts with Comma 2 device, and the device has a camera and GPS tracker to detect the car's current location. The camera detects the surrounding objects and a GPS tracker to find the current point of the driver and helps the driver drive safely. 
+
+The hacker will start the misuse if they can decode the current location of the driver. The hacker tries to connect to the local network of OpenPilot. The hacker can run a location decoder and try to connect to the local network of open pilots. We can use a hash function like SHA-256 to decode the current location of the driver. It will make it harder for the hacker to extract the information. The other feature that will be is detecting multiple users by the comma software. It will prevent malicious users from trying to connect to a local network and alert the users.
+ 
+ The driver also can check other users in the network. It will also prevent malicious users get inside the network.
 
 
 ### Use Case diagram on Wifi update of software (Installer/Updater Bash Scripts) --> Jack:
