@@ -16,7 +16,7 @@ Should the hijacker manage to get a working connection, however, there should be
 
 
 ### Use Case diagram on Wifi update of software (Installer/Updater Bash Scripts) --> Jack:
-![InstallerBashUpdater_UseCase drawio (1)](https://user-images.githubusercontent.com/57100645/134416881-a434363f-a5cb-43ff-b408-e2d94b0fabdb.png)
+![InstallerBashUpdater_UseCase drawio (2)](https://user-images.githubusercontent.com/57100645/134729238-db3bfd78-d6b6-43a3-a406-0f082cd07792.png)
 
 
 ### Use Case diagram on External Environment Hazards (Self-Drive Safety Tests) --> Chad:
@@ -50,3 +50,4 @@ Contributions:\
 **Jack** - Use case diagram on Wifi update of software, Organization of assignments/meetings\
 **Jose** - Use case diagram pertaining to cereal internal logging, Review & Research for diagrams\
 **Kyle** - Use case diagram on steering/braking, Overall Use/Misuse case discussion
+
