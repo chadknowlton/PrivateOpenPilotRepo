@@ -1,9 +1,16 @@
 # Requirements for Software Security Engineering
 ## Part 1: Misuse Case Assessment
 
-### Use Case diagram on Alerting Distracted Driver (Self-Drive Safety Tests) --> Jose
 ### Use Case diagram pertaining to cereal internal logging --> Jose
-![image](https://user-images.githubusercontent.com/47230603/134416325-1b97d5dc-0662-4dd8-8b90-afb4bf065f22.png)
+![Cereal Use Case Diagram](https://user-images.githubusercontent.com/47230603/134777176-2a258351-3fa6-4035-b938-42db2e282566.png)
+  
+For this use diagram, we explore how a hacker would gain access to the internal cereal logs on the device. The Cereal logs contain all sorts of information but the diagram focuses more on GPS data because it could be used to learn more about the user of the comma 2 device and CAN data since it could be used to learn more about the inner workings of OpenPilot and could be used to learn more about how the device works and cause more malicious actions. 
+
+The easiest way for a hacker to do this would be to gain physical access to the device; from there the hacker would just need to access the storage and find the logs. In order to mitigate this the comma 2 would have to encrypt its storage device to deter the hacker from prying further. 
+
+the hacker could try to get the device to connect to a rogue access point that he controls in order to try and gain access to the logs remotely. The comma 2 device does not connect to unknown networks which helps prevent this from happening.
+
+If the hacker is successful at getting the device to connect to his network or is on the same network as the device he could attempt to gain access to these logs by connecting to the comma 2 device via SSH, SSH can be disabled on the device which would prevent this from happening. However, if SSH is enabled the comma 2 uses SSH keys in order to validate who is connecting to it to prevent a hacker from connecting. If the SSH key becomes compromised, a limit of login failures can be implemented to ban the IP connecting to it, fail2ban.
 
 ### Use Case diagram on Steering/Braking (Addresses Vehicle Actuators) --> Kyle:
 ![Openpilot Misuse Case Diagram](https://user-images.githubusercontent.com/61159481/134554526-469adf26-1403-4455-8105-70ef1a5ff07f.png)
