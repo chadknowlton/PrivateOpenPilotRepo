@@ -2,7 +2,7 @@
 ## Part 1: Misuse Case Assessment
 
 ### Use Case diagram pertaining to cereal internal logging --> Jose
-![Cereal Use Case Diagram](https://user-images.githubusercontent.com/47230603/134777176-2a258351-3fa6-4035-b938-42db2e282566.png)
+![Cereal Use Case Diagram](https://user-images.githubusercontent.com/47230603/134778104-6a29dcde-123f-4ea3-8af9-83801c271063.png)
   
 For this use diagram, we explore how a hacker would gain access to the internal cereal logs on the device. The Cereal logs contain all sorts of information but the diagram focuses more on GPS data because it could be used to learn more about the user of the comma 2 device and CAN data since it could be used to learn more about the inner workings of OpenPilot and could be used to learn more about how the device works and cause more malicious actions. 
 
