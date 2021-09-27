@@ -79,9 +79,9 @@ When our team was initially setting up this document, we ran into a couple of hu
 Our previous grade for the project proposal helped us better understand the format for this class, but we all agree that we need to divert more time to ensure the quality of our submissions does not go down. In the future, we need to pay more attention to the rubric at hand and be willing to meet outside of regular hours to more efficiently complete future assignments. 
 
 ### Contributions:
-**Chad** - Initial part 2 security configuration summary, Use Case Diagram on malicious drivers/hijackers\
-**Dip** - Use case diagram on Car location and surroundings, Overall Use/Misuse case discussion\
-**Jack** - Use case diagram on Wifi update of software, Organization of assignments/meetings\
-**Jose** - Use case diagram pertaining to cereal internal logging, Review & Research for diagrams\
-**Kyle** - Use case diagram on steering/braking, Overall Use/Misuse case discussion
+**Chad** - Initial part 2 security configuration summary, Use Case Diagram on malicious drivers/hijackers, Braking Issue\
+**Dip** - Use case diagram on Car location and surroundings, Overall Use/Misuse case discussion, Vehicle Speed Issue\
+**Jack** - Use case diagram on Wifi update of software, Organization of assignments/meetings, Software Vehicle Recognition Issue\
+**Jose** - Use case diagram pertaining to cereal internal logging, Review & Research for diagrams, Vehicle Comminucation Issue\
+**Kyle** - Use case diagram on steering/braking, Overall Use/Misuse case discussion, Steering Fault Issue
 
