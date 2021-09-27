@@ -60,9 +60,10 @@ However, the software does do a fantastic job of quickly and safely controlling 
 3. Vehicle must not alter too quickly for the driver to safely react
 
 ### OSS Project Documentation Related to Security and Installation Issues
-  1. [Camera Startup Issue](https://github.com/commaai/openpilot/issues/21925)
+  1. [Camera Startup Issue](https://github.com/commaai/openpilot/issues/21925)  
+A user of openpilot has reported an issue stating that when he attempts to use his comma 3 device displays an “openpilot unavailable” message. The user also states that the vehicle he is attempting to use the device on is a 2017 Honda Pilot verified all the hardware was installed correctly; an important thing to note however is that only the Honda Pilot with the built-in camera is fully supported by OpenPilot out of the box. Another thing of note is that the comma 3 was just released in august. What the user is experiencing could be due to his vehicle not being supported or OpenPilot still having issues with the newly released hardware.
 
-  2. [Steering Fault Issue](https://github.com/commaai/openpilot/issues/21557)
+  2. [Steering Fault Issue](https://github.com/commaai/openpilot/issues/21557)  
 Currently, the Panda device which facilitates communication between the OpenPilot software and a vehicle’s controller area network has a bug which inhibits steering capability. Panda will randomly drop lane keeping assist messages, allowing for gaps in the rolling counter message stream. While many controller area networks allow for gaps in the counter, some do not tolerate it such as those in GM cars. As a result, “Steering Temporarily Unavailable” and “Cruise Fault” errors may appear and prevent OpenPilot from continuing to engage with the vehicle. Correcting these errors involves restarting both the OpenPilot software device and the vehicle.
 
   3. [Communication Issue](https://github.com/commaai/openpilot/issues/22340)
