@@ -63,6 +63,7 @@ However, the software does do a fantastic job of quickly and safely controlling 
   1. [Camera Startup Issue](https://github.com/commaai/openpilot/issues/21925)
 
   2. [Steering Fault Issue](https://github.com/commaai/openpilot/issues/21557)
+Currently, the Panda device which facilitates communication between the OpenPilot software and a vehicle’s controller area network has a bug which inhibits steering capability. Panda will randomly drop lane keeping assist messages, allowing for gaps in the rolling counter message stream. While many controller area networks allow for gaps in the counter, some do not tolerate it such as those in GM cars. As a result, “Steering Temporarily Unavailable” and “Cruise Fault” errors may appear and prevent OpenPilot from continuing to engage with the vehicle. Correcting these errors involves restarting both the OpenPilot software device and the vehicle.
 
   3. [Communication Issue](https://github.com/commaai/openpilot/issues/22340)
 
