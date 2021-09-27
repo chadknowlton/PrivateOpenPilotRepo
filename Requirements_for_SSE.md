@@ -74,11 +74,11 @@ A user of openpilot has reported an issue stating that when he attempts to use h
   5. [Vehicle Speed Issue](https://github.com/commaai/openpilot/issues/19801)  
 
 ### Team Reflection 
-When our team was initially setting up this document, we ran into a couple of hurdles regarding the formatting of this piece. Specifically over the five essential interactions within our software and the user cases needed. The most fundamental reason is that we had not thoroughly understood the software process. Other issues involved us reaching out of scope or thinking at too high of a level. Ultimately, our team finalized and discussed the diagrams individually before committing. Our second issue with this document pertained to the OSS Porject documentation and reflection in the sense that we almost completely forgot to include it. After reviewing the document and noticing the error, our team quickly went into meeting to discuss completing this portion of the assignmnet. 
+When our team was initially setting up this document, we ran into a couple of hurdles regarding the formatting of this piece. Specifically over the five essential interactions within our software and the user cases needed. The most fundamental reason is that we had not thoroughly understood the software process. Other issues involved us reaching out of scope or thinking at too high of a level. Ultimately, our team finalized and discussed the diagrams individually before committing. Our second issue with this document pertained to the OSS Project documentation and reflection in the sense that we almost completely forgot to include it. After reviewing the document and noticing the error, our team quickly went into meeting to discuss completing this portion of the assignment.
 
-Our previous grade for the project proposal helped us better understand the format for this class, but we all agree that we need to divert more time to ensure the quality of our submissions does not go down. In the future, we need to pay more attention to the rubric at hand and be willing to meet outside of regular hours to more effienctly complete future assignments. 
+Our previous grade for the project proposal helped us better understand the format for this class, but we all agree that we need to divert more time to ensure the quality of our submissions does not go down. In the future, we need to pay more attention to the rubric at hand and be willing to meet outside of regular hours to more efficiently complete future assignments. 
 
-### Contributions:\
+### Contributions:
 **Chad** - Initial part 2 security configuration summary, Use Case Diagram on malicious drivers/hijackers\
 **Dip** - Use case diagram on Car location and surroundings, Overall Use/Misuse case discussion\
 **Jack** - Use case diagram on Wifi update of software, Organization of assignments/meetings\
