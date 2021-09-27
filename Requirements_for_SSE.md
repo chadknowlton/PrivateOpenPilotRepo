@@ -58,7 +58,20 @@ However, the software does do a fantastic job of quickly and safely controlling 
 2. Driver must be capable of immediately retaking control
 3. Vehicle must not alter too quickly for the driver to safely react
 
-### Planning and Reflection --> Overall team planning and Individual Contribution  --> All
+###OSS Project Documentation Related to Security and Installation Issues
+  1. [Camera Startup Issue](https://github.com/commaai/openpilot/issues/21925)
+
+  2. [Steering Fault Issue](https://github.com/commaai/openpilot/issues/21557)
+
+  3. [Communication Issue](https://github.com/commaai/openpilot/issues/22340)
+
+  4. [Braking Issue](https://github.com/commaai/openpilot/issues/2624)
+
+  5. [Vehicle Speed Issue](https://github.com/commaai/openpilot/issues/19801)
+
+### Team Reflection 
+
+
 
 Contributions:\
 **Chad** - Initial part 2 security configuration summary, Use Case Diagram on malicious drivers/hijackers\
