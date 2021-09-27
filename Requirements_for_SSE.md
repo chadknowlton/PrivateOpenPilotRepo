@@ -1,7 +1,7 @@
 # Requirements for Software Security Engineering
 ## Part 1: Misuse Case Assessment
 
-### Use Case diagram pertaining to cereal internal logging --> Jose
+### Use Case diagram pertaining to cereal internal logging 
 ![Cereal Use Case Diagram](https://user-images.githubusercontent.com/47230603/134778104-6a29dcde-123f-4ea3-8af9-83801c271063.png)
   
 For this use diagram, we explore how a hacker would gain access to the internal cereal logs on the device. The Cereal logs contain all sorts of information but the diagram focuses more on GPS data because it could be used to learn more about the user of the comma 2 device and CAN data since it could be used to learn more about the inner workings of OpenPilot and could be used to learn more about how the device works and cause more malicious actions. 
@@ -12,13 +12,13 @@ the hacker could try to get the device to connect to a rogue access point that h
 
 If the hacker is successful at getting the device to connect to his network or is on the same network as the device he could attempt to gain access to these logs by connecting to the comma 2 device via SSH, SSH can be disabled on the device which would prevent this from happening. However, if SSH is enabled the comma 2 uses SSH keys in order to validate who is connecting to it to prevent a hacker from connecting. If the SSH key becomes compromised, a limit of login failures can be implemented to ban the IP connecting to it, fail2ban.
 
-### Use Case diagram on Steering/Braking (Addresses Vehicle Actuators) --> Kyle:
+### Use Case diagram on Steering/Braking (Addresses Vehicle Actuators) 
 ![Openpilot Misuse Case Diagram](https://user-images.githubusercontent.com/61159481/134554526-469adf26-1403-4455-8105-70ef1a5ff07f.png)
 For the steering/braking use diagram, we explore the misuse case where a malicious hijacker is attempting to take control of the vehicle away from the openpilot software. To start off, the hijacker will need to be able access the connection between the openpilot software and the vehicle CAN network where actuators are controlled. Since the openpilot software only uses Wi-Fi to connect to the car, this helps to limit the range from which someone could attempt to connect. Unfortunately, this doesn’t help to prevent someone who is driving nearby and remaining within range. Therefore, another layer of protection via SSH IP filtering is implemented to make it harder for an unauthorized user to determine what the SSH key of the device running the openpilot software is.
 
 Should the hijacker manage to get a working connection, however, there should be preemptive counters within the openpilot software to mitigate any further misuses. Due to the nature of openpilot being a critical system, having an environment which allows for code execution is not acceptable. As a result, much of the development effort has been put towards preventing this altogether rather than trying to sandbox everything. Even if a hijacker was able to execute code giving them remote control of the vehicle, the openpilot software has been developed to always allow for the driver to retake control immediately. The software also cannot alter the vehicle trajectory in a way which would be too quick for the driver to react safely in these cases.
 
-### Use Case diagram on Car location and surroundings (Addresses GPS Satellite) --> Dip:
+### Use Case diagram on Car location and surroundings (Addresses GPS Satellite) 
 ![gpstracker](https://user-images.githubusercontent.com/25081252/134749470-7d142168-61f0-4c5f-ab68-7c00cd9c3e86.png)
 
 OpenPilot uses a camera and GPS satellite to detect car location and its surroundings. We explore that hackers can decode the coordinate information and locate the driver's current location. This use-case starts with Comma 2 device, and the device has a camera and GPS tracker to detect the car's current location. The camera detects the surrounding objects and a GPS tracker to find the current point of the driver and helps the driver drive safely. 
@@ -28,14 +28,14 @@ The hacker will start the misuse if they can decode the current location of the 
  The driver also can check other users in the network. It will also prevent malicious users get inside the network.
 
 
-### Use Case diagram on Wifi update of software (Installer/Updater Bash Scripts) --> Jack:
+### Use Case diagram on Wifi update of software (Installer/Updater Bash Scripts) 
 ![InstallerBashUpdater_UseCase drawio (4)](https://user-images.githubusercontent.com/57100645/134732947-d177e379-c2af-4acc-b3b2-20819da68413.png)
 
 In the event the comma two device loses the ability to maintain active awareness and connection for updates, we explore the misuse case where am electrical failure inhibits a vehicle stall. This use case starts with the comma two device. The device has the ability to scan for road hazards, monitor vehicle positioning, and has the ability to automatically shut off. The misuse case begins with an electrical failure that results in a vehicular stall. The stall threatens the devices abilities to monitor surroundings. However, the comma two device will detect this stall and automatically disable itself to prevent any conflicts with the vehicles built in emergency systems. The automatic shutoff will also maintain the cache and memory. This will prevent device corruption in the event that stall occurs during an update.
 
 The driver is the secondary actor in this scenario and has the ability to monitor the surroundings and assume control of the vehicle when a vehicular stall occurs. In this event the driver detects a stall has occurred and can resume monitoring surrounding and maintain control of the vehicle.
 
-### Use Case diagram on External Environment Hazards (Self-Drive Safety Tests) --> Chad:
+### Use Case diagram on External Environment Hazards (Self-Drive Safety Tests) 
 ![Malicious Driver drawio](https://user-images.githubusercontent.com/46686977/134443091-e6d81aff-c4f1-4205-bf97-a237a7dbf1e7.png)
 For the Self-Drive Safety Tests diagram, we explore the misuse case where one or more hazards on/near the roadway introduce potentially dangerous situations that hinder usage of the openpilot software. Since the software relies primarily on its usage of sensors for both the outside of the car (the roadway) and the inside of the car (the driver) we considered two situations that could cause issues for the software.
 
