@@ -69,7 +69,7 @@ Currently, the Panda device which facilitates communication between the OpenPilo
   3. [Communication Issue](https://github.com/commaai/openpilot/issues/22340)  
 A user of openpilot has reported an issue stating that when he attempts to use his comma 3 device displays an “openpilot unavailable” message. The user also states that the vehicle he is attempting to use the device on is a 2017 Honda Pilot verified all the hardware was installed correctly; an important thing to note however is that only the Honda Pilot with the built-in camera is fully supported by OpenPilot out of the box. Another thing of note is that the comma 3 was just released in august. What the user is experiencing could be due to his vehicle not being supported or OpenPilot still having issues with the newly released hardware.
 
-  4. [Memory Issue](https://github.com/commaai/openpilot/issues/2574)
+  4. [Memory Issue](https://github.com/commaai/openpilot/issues/2574)  
 Current release of Openpilot has reports of high memory used usage during normal low-stress situations. Replication of issue is unclear, but involves \*\_ui using up to 3.1 gigs of random access memory. The unit in which the software was ran was only operational for under a day. The current bug is looking to be patched in version 0.81. 
 
   5. [Vehicle Speed Issue](https://github.com/commaai/openpilot/issues/19801)                                                                                     
