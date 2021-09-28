@@ -75,7 +75,8 @@ Current release of Openpilot has reports of high memory used usage during normal
   5. [Vehicle Speed Issue](https://github.com/commaai/openpilot/issues/19801)                                                                                     
 A user found a difference in desired ACC speed and actual vehicle cruise speed in comma two devices while driving on 2021 Hyundai Sonata N Line. The user drove at 40mph, but the vehicle got steady at 38mph even after going uphill. In the hilly region, where acceleration is dependent on the inclined slope, it decreases the speed of vehicles on the upper hill and increases the speed of going downwards. Currently, openPilot set speed does not consider these issues. Also, OpenPilot does not slow down on turns, and the software often crashes if the target speed is high.
 
-### Collaboration Link
+### Collaboration Links
+[Github Repository Main Page](https://github.com/chadknowlton/PrivateOpenPilotRepo)
 [Github Project Board](https://github.com/chadknowlton/PrivateOpenPilotRepo/projects/1)
 
 ### Team Reflection 
