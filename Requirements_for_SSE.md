@@ -20,7 +20,7 @@ For the steering/braking use diagram, we explore the misuse case where a malicio
 Should the hijacker manage to get a working connection, however, there should be preemptive counters within the openpilot software to mitigate any further misuses. Due to the nature of openpilot being a critical system, having an environment which allows for code execution is not acceptable. As a result, much of the development effort has been put towards preventing this altogether rather than trying to sandbox everything. Even if a hijacker was able to execute code giving them remote control of the vehicle, the openpilot software has been developed to always allow for the driver to retake control immediately. The software also cannot alter the vehicle trajectory in a way which would be too quick for the driver to react safely in these cases.
 
 ### Use Case diagram on Car location and surroundings (Addresses GPS Satellite) 
-![location drawio](https://user-images.githubusercontent.com/25081252/135003495-176d9282-1460-4e10-be1c-ada156b939a6.png)
+![location drawio](https://user-images.githubusercontent.com/25081252/135003873-948bc286-bdbf-4875-b9cd-ccb5b27baefb.png)
 
 OpenPilot uses a camera and GPS satellite to detect car location and its surroundings. We explore that hackers can decode the coordinate information and locate the driver's current location. This use-case starts with Comma 2 device, and the device has a camera and GPS tracker to detect the car's current location. The camera detects the surrounding objects and a GPS tracker to find the current point of the driver and helps the driver drive safely. 
 
