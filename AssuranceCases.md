@@ -18,8 +18,7 @@
 
 
 ## Alignment with OpenPilot
-In our assurance cases, we present a number of pieces of supporting evidence. For each of these pieces, we will discuss whether it aligns with functionality provided by OpenPilot.
-If it does not align with OpenPilot, we will also discuss whether it might be a good candidate for inclusion in our framework with future work.
+In our assurance cases, we present a number of pieces of supporting evidence. For each of these pieces, we will discuss whether it aligns with functionality provided by OpenPilot. If it does not align with OpenPilot, we will also discuss whether it might be a good candidate for inclusion in our framework with future work.
 
 ### Evidence in Claim 1
 
@@ -28,7 +27,8 @@ If it does not align with OpenPilot, we will also discuss whether it might be a 
 
 
 ### Evidence in Claim 3
-
+1. Persistent Memory Architecture - One of the comma two devices features is persistent memory architecture within the CPU of the device. This allows for any current memory stored within the cache to stay maintained during any event in which the device is unplugged, disrupted, or switched off. 
+2. Panda Safety Model - The safety model for OpenPilot outlines the main principles for the software to maintain compliance with safety. In the event of stall, the driver must be able to take control of the vehicle when the device shuts down.
 
 ### Evidence in Claim 4
 
