@@ -37,6 +37,6 @@ In our assurance cases, we present a number of pieces of supporting evidence. Fo
 
 
 ## Teamwork Reflection
-
+The beginning of this submission has been cut and clear for our team. Each member was assigned a claim and required to provide evidence to the claim. This submission is also the first in which we utilized the openpilot community discord for questions and further information pertaining to the software.
 
 
