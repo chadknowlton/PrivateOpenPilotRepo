@@ -8,8 +8,8 @@
 ### Claim 2
 
 
-### Claim 3
-
+### Claim 3: OpenPilot mitigates software corruption
+![AssuranceCase3 drawio](https://user-images.githubusercontent.com/57100645/135684117-d2687d0a-1b25-45c4-a75f-8e5f6bf5122e.png)
 
 ### Claim 4
 
@@ -37,7 +37,6 @@ If it does not align with OpenPilot, we will also discuss whether it might be a 
 
 
 ## Teamwork Reflection
-
 
 
 
