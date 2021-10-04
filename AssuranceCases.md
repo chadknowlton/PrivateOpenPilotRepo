@@ -2,7 +2,7 @@
 
 ## Top Level Claims
 
-### Claim 1
+### Claim 1: OpenPilot maintains vehicle safety during environmental hazards
 
 
 ### Claim 2
