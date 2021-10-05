@@ -15,6 +15,7 @@
 
 
 ### Claim 5
+![Phipps Assurance Case 5 WIP](https://user-images.githubusercontent.com/61159481/135945705-02f2d1e4-b131-410f-bb79-767e3349e25e.png)
 
 
 ## Alignment with OpenPilot
