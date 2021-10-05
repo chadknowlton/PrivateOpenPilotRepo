@@ -8,8 +8,8 @@
 ### Claim 2
 
 
-### Claim 3: OpenPilot mitigates software corruption
-![AssuranceCase3 drawio](https://user-images.githubusercontent.com/57100645/135684117-d2687d0a-1b25-45c4-a75f-8e5f6bf5122e.png)
+### Claim 3
+![Assurancecase3](https://user-images.githubusercontent.com/57100645/136056210-a8c06b42-a773-40e3-af94-0c54c17f20b5.PNG)
 
 ### Claim 4
 
@@ -28,7 +28,7 @@ In our assurance cases, we present a number of pieces of supporting evidence. Fo
 
 
 ### Evidence in Claim 3
-1. Persistent Memory Architecture - One of the comma two devices features is persistent memory architecture within the CPU of the device. This allows for any current memory stored within the cache to stay maintained during any event in which the device is unplugged, disrupted, or switched off. 
+1. Persistent Memory Architecture - The comma three device features a capacitor that aalows the device to maintain operation even when the vehicle loses power (less than 12 volts). The device will detect such a state and beep to notify the user. It will also allow for about five addition seconds of runtime before powering down. During this powerdown cycle, the current memory stored within the cache will stay maintained. 
 2. Panda Safety Model - The safety model for OpenPilot outlines the main principles for the software to maintain compliance with safety. In the event of stall, the driver must be able to take control of the vehicle when the device shuts down.
 
 ### Evidence in Claim 4
@@ -39,5 +39,6 @@ In our assurance cases, we present a number of pieces of supporting evidence. Fo
 
 ## Teamwork Reflection
 The beginning of this submission has been cut and clear for our team. Each member was assigned a claim and required to provide evidence to the claim. This submission is also the first in which we utilized the openpilot community discord for questions and further information pertaining to the software.
+
 
 
