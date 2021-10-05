@@ -2,7 +2,8 @@
 
 ## Top Level Claims
 
-### Claim 1: OpenPilot maintains vehicle safety during environmental hazards
+### Claim 1: 
+![EnvironmentAssuranceCase drawio](https://user-images.githubusercontent.com/46686977/136082494-0eb93e05-1d98-4841-8ec0-1843f1524d1f.png)
 
 
 ### Claim 2
