@@ -12,7 +12,7 @@
 ### Claim 3
 ![Assurancecase3](https://user-images.githubusercontent.com/57100645/136056210-a8c06b42-a773-40e3-af94-0c54c17f20b5.PNG)
 
-### Claim 4
+### Claim 4 Openpilot prevents unauthorized access to driver's data
 
 
 ### Claim 5
