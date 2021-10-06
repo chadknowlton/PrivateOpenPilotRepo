@@ -6,7 +6,8 @@
 ![EnvironmentAssuranceCase drawio (1)](https://user-images.githubusercontent.com/46686977/136089971-bd280ead-ceca-4fa1-9e7c-357e15cafb6f.png)
 
 
-### Claim 2
+### Claim 2:
+Openpilot minimizes the risk of remote code execution
 
 
 ### Claim 3
