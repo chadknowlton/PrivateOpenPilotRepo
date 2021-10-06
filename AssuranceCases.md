@@ -12,7 +12,8 @@
 ### Claim 3
 ![Assurancecase3](https://user-images.githubusercontent.com/57100645/136056210-a8c06b42-a773-40e3-af94-0c54c17f20b5.PNG)
 
-### Claim 4
+### Claim 4![Assurance Case](https://user-images.githubusercontent.com/25081252/136274858-dfaab8af-7d2e-4fa8-acc1-0552ac8d8bbd.png)
+
 
 
 ### Claim 5
