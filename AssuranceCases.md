@@ -16,8 +16,7 @@
 ![Assurance Case](https://user-images.githubusercontent.com/25081252/136594875-19aef9ef-aab7-42da-b76a-7ef45d9f9c49.png)
 
 ### Claim 5
-![Phipps_Assurance_Case_5](https://user-images.githubusercontent.com/61159481/136629875-27127557-b128-48f6-bb79-78100299d49f.png)
-
+![Phipps_Assurance_Case_5](https://user-images.githubusercontent.com/61159481/136631656-8ff6e36d-18f4-4678-bed5-26b2622f2ee7.png)
 
 
 
