@@ -18,7 +18,6 @@
 ![Phipps_Assurance_Case_5](https://user-images.githubusercontent.com/61159481/136631656-8ff6e36d-18f4-4678-bed5-26b2622f2ee7.png)
 
 
-
 ## Alignment with OpenPilot
 In our assurance cases, we present a number of pieces of supporting evidence. For each of these pieces, we will discuss whether it aligns with functionality provided by OpenPilot. If it does not align with OpenPilot, we will also discuss whether it might be a good candidate for inclusion in our framework with future work.
 
@@ -40,7 +39,7 @@ In our assurance cases, we present a number of pieces of supporting evidence. Fo
 ### Evidence in Claim 3
 1. Device Capacitor: The comma three device features a capacitor that allows the device to maintain operation even when the vehicle loses power (less than 12 volts). The device will detect such a state and beep to notify the user. It will also allow for about five addition seconds of runtime before powering down. During this powerdown cycle, the current memory stored within the cache will stay maintained.
 2. Persistent Memory Architecture:  The CPU of the comma device allows for the protection of data integrity with cache and memory protection in the event of a sudden powerdown cycle. This cycle is further assisted by capacitor in Claim 3 #1. 
-3. Panda Safety Model: The [safety model](https://blog.comma.ai/understanding-the-openpilot-safety-model/) for OpenPilot outlines the main principles for the software to maintain compliance with safety. In the event of stall, the driver must be able to take control of the vehicle when the device shuts down.
+3. Panda Safety Model: The [safety model](https://blog.comma.ai/understanding-the-openpilot-safety-model/) for OpenPilot outlines the main principles for the software to maintain compliance with safety. The device's OpenPilot software utilizes the model in the fact that it implments data protection in the [code](https://github.com/commaai/panda/tree/master/board/safety). Not only will the device have software implmentations to notify the driver upon shutdown, it will also utilize the code to maintain data from corruption. 
 4. Comma Connect: Cellular application that enables a bridge to the comma device. When the device is synced to the application, the application will be able to maintain device logs and data.
 
 ### Evidence in Claim 4
@@ -48,7 +47,6 @@ In our assurance cases, we present a number of pieces of supporting evidence. Fo
 2. Extra layer of Safety in panda: In the same safety model, it is also stated that there is an extra layer of safety in panda after doing injection testing.
 3. Login through secure accounts: In the comma connect [login page](https://connect.comma.ai/), it only allows users to log in through their Gmail, Github, or apple account which are considered to be secure accounts.
 4. Add-ons issues solving logs: Openpilot [GitHub issue page](https://github.com/commaai/openpilot/issues), it can be seen hundreds of issues. The openpilot GitHub community continuously monitored those issues and try to solve them. 
-
 
 ### Evidence in Claim 5
 1. Initialization Shell File: Openpilot has a shell file which initializes the Comma device called [launch_chffrplus.sh](https://github.com/commaai/openpilot/blob/master/launch_chffrplus.sh) in its root directory. Part of its startup processes include disabling Bluetooth connection and performing a wireless LAN scan for a vehicle controller area network. Bluetooth is the only connection method which gets disabled here however, meaning that Cellular Data, Wifi, GPS, and wired connection ports are still active.
