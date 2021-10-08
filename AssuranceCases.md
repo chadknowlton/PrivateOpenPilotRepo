@@ -10,7 +10,7 @@
 
 
 ### Claim 3
-![Assurancecase3](https://user-images.githubusercontent.com/57100645/136631799-bda4f91b-5d19-49a4-ab7f-53153ee89627.PNG)
+![AssuranceCase3 drawio](https://user-images.githubusercontent.com/57100645/136631875-482f9f75-c7f7-4f91-af3a-bbac14404a4f.png)
 
 ### Claim 4
 ![Assurance Case](https://user-images.githubusercontent.com/25081252/136594875-19aef9ef-aab7-42da-b76a-7ef45d9f9c49.png)
