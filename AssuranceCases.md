@@ -48,8 +48,8 @@ In our assurance cases, we present a number of pieces of supporting evidence. Fo
 ### Evidence in Claim 4
 1. Messages design with ADAS: In the openpilot [safety model](https://comma-ai.medium.com/understanding-the-openpilot-safety-model-fe9797e306bf), point 3 it is mentioned the usage of CAN messages designed for ADAS.
 2. Extra layer of Safety in panda: In the same safety model, it is also stated that there is an extra layer of safety in panda after doing injection testing.
-3. Login through secure accounts: In the comma connect login page, it only allows users to log in through their Gmail, Github, or apple account which are considered to be secure accounts.
-4. Add-ons issues solving logs: Openpilot GitHub issue page, it can be seen hundreds of issues. The openpilot GitHub community continuously monitored those issues and try to solve them. 
+3. Login through secure accounts: In the comma connect [login page](https://connect.comma.ai/), it only allows users to log in through their Gmail, Github, or apple account which are considered to be secure accounts.
+4. Add-ons issues solving logs: Openpilot [GitHub issue page](https://github.com/commaai/openpilot/issues), it can be seen hundreds of issues. The openpilot GitHub community continuously monitored those issues and try to solve them. 
 
 
 ### Evidence in Claim 5
