@@ -7,7 +7,7 @@
 
 
 ### Claim 2:
-Openpilot minimizes the risk of remote code execution
+![Assurance Case drawio](https://user-images.githubusercontent.com/47230603/136592114-5a52047a-5f2d-48aa-8557-a5c67b3c27d8.png)
 
 
 ### Claim 3
