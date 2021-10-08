@@ -68,7 +68,6 @@ In our assurance cases, we present a number of pieces of supporting evidence. Fo
 The project board for this assignment is located at https://github.com/chadknowlton/PrivateOpenPilotRepo/projects/2
 
 ## Teamwork Reflection
-The beginning of this submission has been cut and clear for our team. Each member was assigned a claim and required to provide evidence to the claim. This submission is also the first in which we utilized the openpilot community discord for questions and further information pertaining to the software.
+The beginning of this submission has been cut and clear for our team. Each member was assigned a claim and required to provide evidence to the claim. This submission is also the first in which we utilized the openpilot community discord for questions and further information pertaining to the software. The meeting with professor led us to discover that we were going into too much depth on our cases, and instead should focus more closely on claims that are appropriate to OpenPilot and its capabilities. We had good arguements but we were making it complicated on ourselves by making broad claims about the system rather than more specific ones around OpenPilot.
 
-
-
+As done in the last assignment, we had split the jobs between our team members. In order to ensure that we all agreed on our diagrams and evidence, we subjected ourselves to extra weekly meetings. The extra meetings were setup with a vote on specific hours and this allowed the team to vote on the time that worked best. Overall, our team felt like we spent more time looking through the fine details on the assignment and less on the setup phase. Our goal for the next assignment is to push our team to work through lectures and quizzes in an earlier manner to better focus our allowed time on the project itself. With the team all working around full-time jobs, it crucial to use the time we have on each submission. 
