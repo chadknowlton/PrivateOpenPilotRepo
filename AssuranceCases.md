@@ -8,9 +8,8 @@
 ### Claim 2
 ![Assurance Case drawio](https://user-images.githubusercontent.com/47230603/136631003-28fe5672-6209-40f7-80b9-20eaed886ea0.png)
 
-
-### Claim 3
-![AssuranceCase3 drawio](https://user-images.githubusercontent.com/57100645/136631875-482f9f75-c7f7-4f91-af3a-bbac14404a4f.png)
+## Claim 3
+#![AssuranceCase3 drawio](https://user-images.githubusercontent.com/57100645/136631900-f473b300-2cba-403e-a032-873e0b58e00b.png)
 
 ### Claim 4
 ![Assurance Case](https://user-images.githubusercontent.com/25081252/136594875-19aef9ef-aab7-42da-b76a-7ef45d9f9c49.png)
