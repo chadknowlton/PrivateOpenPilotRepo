@@ -3,7 +3,7 @@
 ## Top Level Claims
 
 ### Claim 1 
-![EnvironmentAssuranceCase drawio (2)](https://user-images.githubusercontent.com/46686977/136631379-b7e4f5f9-02ed-4f75-ba58-59d408281141.png)
+![EnvironmentAssuranceCase drawio (3)](https://user-images.githubusercontent.com/46686977/136631630-55513928-84c3-4032-be7e-6f4b1b63d91b.png)
 
 ### Claim 2
 ![Assurance Case drawio](https://user-images.githubusercontent.com/47230603/136631003-28fe5672-6209-40f7-80b9-20eaed886ea0.png)
