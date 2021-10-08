@@ -6,7 +6,8 @@
 ![EnvironmentAssuranceCase drawio (1)](https://user-images.githubusercontent.com/46686977/136629695-a17a9205-c609-4f2d-bef2-0cb0fff7b26c.png)
 
 ### Claim 2
-![Assurance Case drawio](https://user-images.githubusercontent.com/47230603/136592114-5a52047a-5f2d-48aa-8557-a5c67b3c27d8.png)
+![Assurance Case drawio](https://user-images.githubusercontent.com/47230603/136631003-28fe5672-6209-40f7-80b9-20eaed886ea0.png)
+
 
 ### Claim 3
 ![AssuranceCase3 drawio](https://user-images.githubusercontent.com/57100645/136628848-a5a70a8a-61e8-4e31-8234-5c84858d20c1.png)
