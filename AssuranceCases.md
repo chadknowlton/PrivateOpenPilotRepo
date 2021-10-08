@@ -14,7 +14,7 @@
 ![Assurancecase3](https://user-images.githubusercontent.com/57100645/136295181-bf942290-c56a-42af-8cea-8197d0d59016.PNG)
 
 ### Claim 4
-![Assurance Case](https://user-images.githubusercontent.com/25081252/136274858-dfaab8af-7d2e-4fa8-acc1-0552ac8d8bbd.png)
+![Assurance Case]![case4](https://user-images.githubusercontent.com/25081252/136594875-19aef9ef-aab7-42da-b76a-7ef45d9f9c49.png)
 
 
 
@@ -46,6 +46,10 @@ In our assurance cases, we present a number of pieces of supporting evidence. Fo
 4. Comma Connect - Cellular application that enables a bridge to the comma device. When the device is synced to the application, the application will be able to maintain device logs and data.
 
 ### Evidence in Claim 4
+1. Messages design with ADAS: In the openpilot safety model, point 3 it is mentioned the usage of CAN messages designed for ADAS.
+2. Extra layer of Safety in panda: In the same safety model, it is also stated that there is an extra layer of safety in panda after doing injection testing.
+3. Login through secure accounts: In the comma connect login page, it only allows users to log in through their Gmail, Github, or apple account which are considered to be secure accounts.
+4. Add-ons issues solving logs: Openpilot GitHub issue page, it can be seen hundreds of issues. The openpilot GitHub community continuously monitored those issues and try to solve them. 
 
 
 ### Evidence in Claim 5
