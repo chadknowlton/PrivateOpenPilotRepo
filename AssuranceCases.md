@@ -6,7 +6,8 @@
 ![EnvironmentAssuranceCase drawio (3)](https://user-images.githubusercontent.com/46686977/136631630-55513928-84c3-4032-be7e-6f4b1b63d91b.png)
 
 ### Claim 2
-![Assurance Case drawio](https://user-images.githubusercontent.com/47230603/136669341-237b2373-d747-4a98-a0ff-f081ef3682bf.png)
+![Case 2 Assurance Case drawio](https://user-images.githubusercontent.com/47230603/136669669-6af57cd6-f932-440c-8781-a074ba4d9e57.png)
+
 
 
 ## Claim 3
