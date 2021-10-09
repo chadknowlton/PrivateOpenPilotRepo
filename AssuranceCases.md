@@ -6,7 +6,8 @@
 ![EnvironmentAssuranceCase drawio (3)](https://user-images.githubusercontent.com/46686977/136631630-55513928-84c3-4032-be7e-6f4b1b63d91b.png)
 
 ### Claim 2
-![Assurance Case drawio](https://user-images.githubusercontent.com/47230603/136631003-28fe5672-6209-40f7-80b9-20eaed886ea0.png)
+![Assurance Case drawio](https://user-images.githubusercontent.com/47230603/136669341-237b2373-d747-4a98-a0ff-f081ef3682bf.png)
+
 
 ## Claim 3
 #![AssuranceCase3 drawio](https://user-images.githubusercontent.com/57100645/136631900-f473b300-2cba-403e-a032-873e0b58e00b.png)
@@ -35,6 +36,7 @@ In our assurance cases, we present a number of pieces of supporting evidence. Fo
 2. Implementation of SSH Keys: Openpilot also adds the usage of SSH keys in order to prevent anyone from just being able to access the device if SSH is enabled. Openpilot mandates the use of keys from a personal GitHub account in order to connect to it. We can see this is the case from the same [SSH wiki](https://github.com/commaai/openpilot/wiki/SSH) mentioned previously.
 3. Openpilot update warning: This is a warning that appears on the device when the user is trying to update to a version of OpenPiot that isn’t an official development or release version. This was a feature that was added in Jan 17, 2020 in this [pull request](https://github.com/commaai/openpilot/pull/964).
 4. Panda Safety Model: This safety model is enforced by a device called “panda” that sits between the device with Openpilot installed and the car itself. The Panda is what actually communicates with the CAN and “tells” the car what to do. This means that it doesn’t matter what code is executed on or by OpenPilot, the panda will always enforce the [safety model](https://blog.comma.ai/understanding-the-openpilot-safety-model/).
+5. Openpilots IP Filter: Since the hardware that Openpilot operates on is capable of being connected to a celular network Openpilot implements an IP filter to limit who can connect to the device. This IP filter is mentioned in the Comma discord and the developers state that it only allows connections that originate from a private IP address. 
 
 ### Evidence in Claim 3
 1. Device Capacitor: The comma three device features a capacitor that allows the device to maintain operation even when the vehicle loses power (less than 12 volts). The device will detect such a state and beep to notify the user. It will also allow for about five addition seconds of runtime before powering down. During this powerdown cycle, the current memory stored within the cache will stay maintained.
