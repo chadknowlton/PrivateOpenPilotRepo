@@ -14,7 +14,8 @@
 #![AssuranceCase3 drawio](https://user-images.githubusercontent.com/57100645/136631900-f473b300-2cba-403e-a032-873e0b58e00b.png)
 
 ### Claim 4
-![Assurance Case](https://user-images.githubusercontent.com/25081252/136594875-19aef9ef-aab7-42da-b76a-7ef45d9f9c49.png)
+![AssuranceCase_4](https://user-images.githubusercontent.com/25081252/136706595-8e33fa21-0671-4118-b7f7-aa2270e88453.png)
+
 
 ### Claim 5
 ![Phipps_Assurance_Case_5](https://user-images.githubusercontent.com/61159481/136631656-8ff6e36d-18f4-4678-bed5-26b2622f2ee7.png)
