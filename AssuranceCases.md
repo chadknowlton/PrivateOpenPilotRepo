@@ -48,7 +48,7 @@ In our assurance cases, we present a number of pieces of supporting evidence. Fo
 
 ### Evidence in Claim 4
 1. Messages design with ADAS: Advanced Driver-Assistance Systems (ADAS) is the electronic system that helps the driver. In the openpilot [safety model](https://comma-ai.medium.com/understanding-the-openpilot-safety-model-fe9797e306bf), point 3 it is mentioned the usage of CAN messages designed for ADAS for the communication between the driver and the system. 
-2. Extra layer of Safety in panda: Openpilot has used an extra layer of safety layer in panda after doing the injection test as mentioned in the safety model point 3. The safety model in pandas can be viewed in this [Github Link] (https://github.com/commaai/panda/tree/master/board/safety).
+2. Extra layer of Safety in panda: Openpilot has used an extra layer of safety layer in panda after doing the injection test as mentioned in the safety model point 3. The safety model in pandas can be viewed in this [Github Link](https://github.com/commaai/panda/tree/master/board/safety).
 3. Login through secure accounts: In the comma connect [login page](https://connect.comma.ai/), it only allows users to log in through their Gmail, Github, or apple account which are considered to be secure accounts.
 4. Add-ons issues solving logs: Openpilot [GitHub issue page](https://github.com/commaai/openpilot/issues), it can be seen hundreds of issues. The openpilot GitHub community continuously monitored those issues and try to solve them. 
 
