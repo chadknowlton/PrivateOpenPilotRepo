@@ -8,18 +8,14 @@
 ### Claim 2
 ![Case 2 Assurance Case drawio](https://user-images.githubusercontent.com/47230603/136669669-6af57cd6-f932-440c-8781-a074ba4d9e57.png)
 
-
-
-## Claim 3
-#![AssuranceCase3 drawio](https://user-images.githubusercontent.com/57100645/136631900-f473b300-2cba-403e-a032-873e0b58e00b.png)
+### Claim 3
+![AssuranceCase3 drawio](https://user-images.githubusercontent.com/57100645/136631900-f473b300-2cba-403e-a032-873e0b58e00b.png)
 
 ### Claim 4
 ![AssuranceCase_4](https://user-images.githubusercontent.com/25081252/136706595-8e33fa21-0671-4118-b7f7-aa2270e88453.png)
 
-
 ### Claim 5
 ![Phipps_Assurance_Case_5](https://user-images.githubusercontent.com/61159481/136631656-8ff6e36d-18f4-4678-bed5-26b2622f2ee7.png)
-
 
 ## Alignment with OpenPilot
 In our assurance cases, we present a number of pieces of supporting evidence. For each of these pieces, we will discuss whether it aligns with functionality provided by OpenPilot. If it does not align with OpenPilot, we will also discuss whether it might be a good candidate for inclusion in our framework with future work.
@@ -59,7 +55,6 @@ In our assurance cases, we present a number of pieces of supporting evidence. Fo
 4. Driver Data Encryption Preprocessing: The Openpilot software does not provide any sort of pre-transfer data encryption methods within its 0.8.9 release. Since driving data is stored locally before being uploaded to the Comma servers, it may be beneficial to encrypt this information when it is stored so old data logs cannot be easily read from the Openpilot device storage.
 5. Python Requests Module: The file [uploader.py](https://github.com/commaai/openpilot/blob/master/selfdrive/loggerd/uploader.py) within the `/selfdrive/loggerd/tools/` directory of the Openpilot software is responsible for uploading driving data to the Comma servers, and does so using the [Requests Module](https://docs.python-requests.org/en/latest/user/quickstart/#make-a-request) for Python. The Requests module allows for data to be sent using HTTP given a URL, the data, and any additional arguments. Requests will also verify SSL certificates for HTTPS requests passed to it, so if it can be shown that the URL used for Requests in Openpilot uses HTTPS then encryption is included in transmission. See evidence 6 for more on this.
 6. Requests HTTPS Upload URL: Since the API host for Comma uses HTTPS as seen in [init.py](https://github.com/commaai/openpilot/blob/master/common/api/__init__.py) found in `/common/api/`, the data transmission is encrypted.
-
 
 ## Project Board
 The project board for this assignment is located at https://github.com/chadknowlton/PrivateOpenPilotRepo/projects/2
