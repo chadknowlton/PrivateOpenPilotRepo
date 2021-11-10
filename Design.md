@@ -1,9 +1,7 @@
 # Designing For Software Security Engineering
 
 ## Threat Modeling
-The full report from the Microsoft Threat Modeling Tool can be viewed at *insert report link here*
-
-
+Our full reports can be viewed at https://github.com/chadknowlton/PrivateOpenPilotRepo/tree/main/Reports
 
 
 ## Observations
