@@ -14,9 +14,11 @@ CSRF attacks contributed to some of the DFD's 'Not Applicable' portions. In the 
 
 Elevation of Privilege attacks with and without the use of remote code execution are also mitigated throughout the DFD. This is due to the Panda Safety Package santizing data for code execution. The attacker would also need some form of proprietary vehicle software to begin the process of gaining elavation within the vehicle itself. 
 
-### GitHub Project Board
+### Logging and External Processes DFD
+
+## GitHub Project Board
 Link to Project Board: https://github.com/chadknowlton/PrivateOpenPilotRepo/projects/3
 
 
 
-### Teamwork Reflection
+## Teamwork Reflection
