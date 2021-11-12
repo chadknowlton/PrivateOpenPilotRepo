@@ -1,7 +1,10 @@
 # Designing For Software Security Engineering
 
 ## Threat Modeling
-Our full reports can be viewed at https://github.com/chadknowlton/PrivateOpenPilotRepo/tree/main/Reports
+Our full reports can be viewed at:
+https://htmlpreview.github.io/?https://github.com/chadknowlton/PrivateOpenPilotRepo/blob/main/Reports/EnviromentalReport.htm
+
+* Second report link here* --> htmlpreview.github.io/? + link to GitHub page.
 
 ## Observations
 ### Enviromental DFD
