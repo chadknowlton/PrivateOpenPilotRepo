@@ -16,7 +16,7 @@ CSRF attacks contributed to some of the DFD's 'Not Applicable' portions. In the 
 
 Elevation of Privilege attacks with and without the use of remote code execution are also mitigated throughout the DFD. This is due to the Panda Safety Package santizing data for code execution. The attacker would also need some form of proprietary vehicle software to begin the process of gaining elavation within the vehicle itself. 
 
-The primary design flaw noticed within the enviromental DFD was the fact that the Panda safety package appears to be the only way for locally trasnferred data to be sanitized and checked for executable code. We recommend an addition of write-blockers to mitigate malicious data from reaching the sensors in the case that Panda safety package is compromised.  
+The primary design flaw noticed within the enviromental DFD was the fact that the Panda safety package appears to be the only way for locally transferred data to be sanitized and checked for executable code. We recommend an addition of write-blockers to mitigate malicious data from reaching the sensors in the case that Panda safety package is compromised.  
 
 ### Logging and External Processes DFD
 
