@@ -23,8 +23,8 @@ For this Data Flow Diagram (DFD) project, our team completed the quiz early so t
 
 Our first step tp beginning this submission was to initally meet to review our assurance cases and create level 0 DFDs to represent each case. From there, we manged to uncover that assurance cases 1 & 3 contained similiar level 0 DFD's in that they both reviewed the local and enviromental processes involved within the OpenPilot software. Cases 2, 4, and 5 all had relation in which they logging and externally facing systems used by OpenPilot. We then split into groups based off our assurance cases to begin crafting out DFDs. Our goal was to have the DFDs finished and reveiewed by professor before our Wednesday meeting. 
 
-Enviromental DFD - Jack Rafter and Chad Middleton
-Logging DFD - Kyle Phipps, Dip Kiran Pradhan Newar, Jose Hernandez
+### Enviromental DFD - Jack Rafter and Chad Middleton
+### Logging DFD - Kyle Phipps, Dip Kiran Pradhan Newar, Jose Hernandez
 
 Once we recieved feedback on our DFDs, the full team began working on the analyses of our DFDs before Wednesday meeting. Once we recieved feedback from our DFDs and rough analyses of said DFDs from the Wednesday meeting with professor, we scheduled two meetings for Thursday to finish our analyses portion. Our Enviromental DFD was completed and submitted to professor for review, but we did end up spending more time on our Logging DFD. 
 
