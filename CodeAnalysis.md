@@ -16,7 +16,7 @@
 
 
 ## Project Board
-Link to team project board: 
+Link to team project board: https://github.com/chadknowlton/PrivateOpenPilotRepo/projects/4
 
 
 
