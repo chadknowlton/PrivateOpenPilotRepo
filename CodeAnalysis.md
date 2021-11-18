@@ -8,6 +8,11 @@ In terms of scanning the C code, SonarCloud needs to compile any C code to have 
 ## Findings From Code Review
 SonarCloud Scan Results: https://sonarcloud.io/summary/overall?id=Rafterman29_openpilot
 
+###Python Scripts
+
+
+
+###Panda Scripts
 
 ## Summary of Key Findings
 
