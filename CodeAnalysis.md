@@ -11,8 +11,7 @@ SonarCloud Scan Results: https://sonarcloud.io/summary/overall?id=Rafterman29_op
 ### Python Scripts
 
 ### CWE-200: Exposure of Sensitive Information to an Unauthorized Actor
-
-CWE Link: https://cwe.mitre.org/data/definitions/200.html
+Link: https://cwe.mitre.org/data/definitions/200.html
 
 Code Review Source:
 * https://sonarcloud.io/project/security_hotspots?id=Rafterman29_openpilot&hotspots=AX0lk5uqEafnvRiIF-DU
@@ -20,13 +19,13 @@ Code Review Source:
 * https://sonarcloud.io/project/security_hotspots?id=Rafterman29_openpilot&hotspots=AX0lk5uiEafnvRiIF-C5
 
 
-In our automated scan of python scripts through SonarCloud, one concerning results returned was the use of mapped `http` addresses. This corresponds to CWE-200: Exposure of Sensitive Information to an Unauthorized Actor. Our results suggested use to ask whether our application data transits over a network that is considered untrusted, and whether
+In our automated scan of python scripts through SonarCloud, one concerning result returned was the use of mapped `http` addresses. This corresponds to CWE-200: Exposure of Sensitive Information to an Unauthorized Actor. Our results suggested use to ask whether our application data transits over a network that is considered untrusted, and whether
 compliance rules require the service to encrypt data in transit. Both of which we answered yes to.We recommned mapping these return functuons to `https` addresses to mitigate sensitive information being transmitted through insecure channels. 
 
-## athnad.py
+### athnad.py
 ` if r.status_code == 302 and r.headers['Location'].startswith("http://u.web2go.com"):` changed to ` if r.status_code == 302 and r.headers['Location'].startswith("https://u.web2go.com"):`
 
-## helpers.py
+### helpers.py
 `requests.put(f'http://{host}:{port}/qlog.bz2', data='')` chnaged to `requests.put(f'https://{host}:{port}/qlog.bz2', data='')` and ` return func(*args, f'http://{host}:{port}', **kwargs)` to ` return func(*args, f'https://{host}:{port}', **kwargs)`
 
 
