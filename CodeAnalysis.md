@@ -29,6 +29,28 @@ compliance rules require the service to encrypt data in transit. Both of which w
 `requests.put(f'http://{host}:{port}/qlog.bz2', data='')` changed to `requests.put(f'https://{host}:{port}/qlog.bz2', data='')` and ` return func(*args, f'http://{host}:{port}', **kwargs)` to ` return func(*args, f'https://{host}:{port}', **kwargs)`
 
 
+### CWE-732: Incorrect Permission Assignment for Critical Resource
+Link: https://cwe.mitre.org/data/definitions/732.html
+
+Code Review Source:
+* https://sonarcloud.io/project/security_hotspots?id=Rafterman29_openpilot&hotspots=AX0lk528EafnvRiIF-LK#
+
+```
+    if input(msg) == 'y':
+        print("Dowloading {}".format(url))
+        with urllib.request.urlopen(url) as response, open(tera_path, 'wb') as out_file:
+            shutil.copyfileobj(response, out_file)
+        print("Successfully downloaded t_renderer.")
+        os.chmod(tera_path, 0o755)
+        return tera_path
+    msg_cancel = "\nYou cancelled automatic download.\n\n"
+    msg_cancel += manual_install
+    msg_cancel += "Once installed re-run your script.\n\n"
+```
+
+This CWE states that " The product specifies permissions for a security-critical resource in a way that allows that resource to be read or modified by unintended actors." This risk was identified as a possibility within the `utils.py` file located in `\pyextra\acados_template`. On line 181 chmod is used to assign file read/write/execute permissions to user groups, and secure coding practices specify that the most restrictive permissions possible should be assigned to files and directories. Assigning less restrictive permissions can lead to unintended access to critical resource files. 
+
+We determined that this identified risk was relatively acceptable within Openpilot, given where the risk was identified and its implementation. The resource file in question is a tera renderer utility which lets anybody read and execute the file, but only allows for the owner to write to it. Since the file will be running in a context which is neither a multi-user environment nor does it contain any confidential  information, it is acceptable for everyone to read it.  
 
 
 
