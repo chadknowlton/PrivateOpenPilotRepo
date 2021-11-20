@@ -8,7 +8,6 @@ In exploring how to analyze the C code of Openpilot, we found better success usi
 ## Findings From Code Review
 SonarCloud Scan Results: https://sonarcloud.io/summary/overall?id=Rafterman29_openpilot
 
-### Python Scripts
 
 ### CWE-200: Exposure of Sensitive Information to an Unauthorized Actor
 Link: https://cwe.mitre.org/data/definitions/200.html
@@ -52,9 +51,6 @@ This CWE states that " The product specifies permissions for a security-critical
 
 We determined that this identified risk was relatively acceptable within Openpilot, given where the risk was identified and its implementation. The resource file in question is a tera renderer utility which lets anybody read and execute the file, but only allows for the owner to write to it. Since the file will be running in a context which is neither a multi-user environment nor does it contain any confidential  information, it is acceptable for everyone to read it.  
 
-
-
-### Panda Scripts
 
 ## Summary of Key Findings
 
