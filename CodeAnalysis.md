@@ -1,6 +1,9 @@
 # Code Analysis for Software Security Engineering
 ## Code Review Strategy
-OpenPilot contains 1,886 files, and roughly half of them are python scripts. The rest of the files consist of a combination of bash and C, C++ files. While the use of an automated tool was with in the realm of possibility, our team felt it was necessary to first try and scan the bulk of code using an automated scanner. It is worth mentioning that OpenPilot is a massively popular project meaning that our chances of finding active vulnerbailities may be slim. However, we wanted to give an automated scanner a try to test the waters and get a feel for the vulnerbailities we should expect to see. Jose and Jack both have experience using SonarCloud and felt it was the best option in going forth to scan the Python code first. We first forked the OpenPilot repository, added a `build.yml` plugin to our builds, and developed a `sonar-project.properties` with some minor changes to fit our scan criteria. To be able to compile the python code, we needed our 'sonar-project.properties' file to ignore all forms of C code to run properly. We did so be adding the lines `sonar.c.file.suffixes=-` , `sonar.cpp.file.suffixes=-`, and `sonar.objc.file.suffixes=-`. This netted us with 7 bugs and 182 vulnerabilities to manually check over. While we believe there are a number of false positives, our team is satisfied with the results returned. This needed to be chnaged so that we could run the scan and have it pickup the C code as well. 
+OpenPilot contains 1,886 files, and roughly half of them are python scripts. The rest of the files consist of a combination of bash and C, C++ files. While the use of an automated tool was with in the realm of possibility, our team felt it was necessary to first try and scan the bulk of code using an automated scanner. It is worth mentioning that OpenPilot is a massively popular project meaning that our chances of finding active vulnerbailities may be slim. However, we wanted to give an automated scanner a try to test the waters and get a feel for the vulnerbailities we should expect to see. 
+
+
+Jose and Jack both have experience using SonarCloud and felt it was the best option in going forth to scan the Python code first. We first forked the OpenPilot repository, added a `build.yml` plugin to our builds, and developed a `sonar-project.properties` with some minor changes to fit our scan criteria. To be able to compile the python code, we needed our 'sonar-project.properties' file to ignore all forms of C code to run properly. We did so be adding the lines `sonar.c.file.suffixes=-` , `sonar.cpp.file.suffixes=-`, and `sonar.objc.file.suffixes=-`. This netted us with 7 bugs and 182 vulnerabilities to manually check over. While we believe there are a number of false positives, our team is satisfied with the results returned. This needed to be chnaged so that we could run the scan and have it pickup the C code as well. 
 
 ** Jose - add paragraph reflecting how you setup SonarCloud to see C code **
 
@@ -69,7 +72,7 @@ Link to team project board: https://github.com/chadknowlton/PrivateOpenPilotRepo
 
 
 ## Teamwork Reflection
-Our first priority when it came to starting this assignmnet was finishing the weekly quiz as early as possible. This set us up for two meetings (11/18 & 11/19) where we discussed our ggoals and code review strategy. We eventually settled on SonarCloud due to Jose and Jack having experience with the product. The Thursday meeting also allowed us to set our individuals goals in contributions to the assignment.
+Our first priority when it came to starting this assignmnet was finishing the weekly quiz as early as possible. This set us up for two meetings (11/18 & 11/19) where we discussed our goals, challenges expected, and **Code Review Strategy**. We eventually settled on SonarCloud due to Jose and Jack having experience with the product. The Thursday meeting also allowed us to set our individuals goals in contributions to the assignment.
 
 **Jack Rafter & Kyle Phipps:** Setup SonarCloud to read the python scripts, and document steps into our **Code Review Strategy**. Then analyze the returned data, and add to **Findings From Code Review**. 
 
@@ -79,6 +82,6 @@ Our first priority when it came to starting this assignmnet was finishing the we
 
 **Full Team:** Meet and discuss our **Contributions to OpenPilot** portion. 
 
-Our final goal was to have the document setup and finalized before our meeting with professor. Our team successfully setup our SonarCloud scanner, and documented the found CWE's as of 11/20. 
+Our final goal was to have the document setup and finalized before our meeting with professor. Our team successfully setup our SonarCloud scanner, and documented the found CWE's as of 11/21. 
 
 As this is our final submission for the class, our team really wanted to get a head-start to give us time to breath and work through the assignmnet in close detail. Our communication strategy and approach in assigning roles has really helped us to a point in which we wished we had pursued this strategy earlier in the semester. To conclude, our communication, presence, and overall individual work has been excellent for this assignment. 
