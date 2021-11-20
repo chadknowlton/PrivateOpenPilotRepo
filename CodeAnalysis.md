@@ -66,3 +66,13 @@ Link to team project board: https://github.com/chadknowlton/PrivateOpenPilotRepo
 
 
 ## Teamwork Reflection
+Our first priority when it came to starting this assignmnet was finishing the weekly quiz as early as possible. This set us up for two meetings (11/18 & 11/19) where we discussed our ggoals and code review strategy. We eventually settled on SonarCloud due to Jose and Jack having experience with the product. The Thursday meeting also allowed us to set our individuals goals in contributions to the assignment.
+
+**Jack Rafter & Kyle Phipps:** Setup SonarCloud to read the python scripts, and document steps into our **Code Review Startegy**. Then analyze the returned data, and add to **Findings From Code Review**. 
+**Dip Kiran Pradhan Newar, Jose Hernandez:** Setup SonarCloud to read the C & C++ scripts, and document steps into our **Code Review Startegy**. Then analyze the returned data, and add to **Findings From Code Review**. 
+**Chad Middleton:** Discuss the findings with the team, determine which should be put into our **Summary of Key Findings**. 
+**Full Team:** Meet and discuss our **Contributions to OpenPilot** portion. 
+
+Our final goal was to have the document setup and finalized before our meeting with professor. Our team successfully setup our SonarCloud scanner, and documented the found CWE's as of 11/20. 
+
+As this is our final submission for the class, our team really wanted to get a head-start to give us time to breath and work through the assignmnet in close detail. Our communication strategy and approach in assigning roles has really helped us to a point in which we wished we had pursued this strategy earlier in the semester. To conclude, our communication, presence, and overall individual work has been excellent for this assignment. 
