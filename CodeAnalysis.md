@@ -28,10 +28,10 @@ In our automated scan of python scripts through SonarCloud, one concerning resul
 compliance rules require the service to encrypt data in transit. Both of which we answered yes to.We recommned mapping these return functuons to `https` addresses to mitigate sensitive information being transmitted through insecure channels. 
 
 #### athnad.py
-` if r.status_code == 302 and r.headers['Location'].startswith("http://u.web2go.com"):` changed to ` if r.status_code == 302 and r.headers['Location'].startswith("https://u.web2go.com"):`
+` if r.status_code == 302 and r.headers['Location'].startswith("http://u.web2go.com"):` 
 
 #### helpers.py
-`requests.put(f'http://{host}:{port}/qlog.bz2', data='')` changed to `requests.put(f'https://{host}:{port}/qlog.bz2', data='')` and ` return func(*args, f'http://{host}:{port}', **kwargs)` to ` return func(*args, f'https://{host}:{port}', **kwargs)`
+`requests.put(f'http://{host}:{port}/qlog.bz2', data='')` and ` return func(*args, f'http://{host}:{port}', **kwargs)` 
 
 
 ### CWE-732: Incorrect Permission Assignment for Critical Resource
