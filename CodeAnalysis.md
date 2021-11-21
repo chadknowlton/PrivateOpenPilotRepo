@@ -74,6 +74,26 @@ QString adapter;  // Path to network manager wifi-device
  The use of a hard-code password could lead to a high risk of authentication failure within the system. This vulnerbaility was security issue was detected within  `selfdrive/ui/qt/offroad/wifiManager.h`. OpenPilot software is risk of credential leakage since this source is used within the production enviroment. Leakage or altering of these credentials could further lead the end user to have snesitive information leaked to the API service. Removal of the hard-coded password is strongly recommended. 
  
 
+### CWE-326: Inadequate Encryption Strength
+Link: https://cwe.mitre.org/data/definitions/326.html
+
+Code Review Source:
+* https://sonarcloud.io/project/issues?id=Rafterman29_openpilot&open=AX0_TGgAgvHzTIyGNH1j&resolved=false&types=VULNERABILITY
+
+```
+size_t getRemoteFileSize(const std::string &url) {
+  CURL *curl = curl_easy_init();
+```
+```
+  std::map<CURL *, MultiPartWriter> writers;
+  const int part_size = content_length / parts;
+  for (int i = 0; i < parts; ++i) {
+    CURL *eh = curl_easy_init();
+```
+
+The automated scanner detected these code snippets within `selfdrive/ui/replay/util.cc` due to an inadequate TLS version being used. It is recommended to enforce TLS 1.2 as the minimum protocol version and disallow versions like TLS 1.0. Failure in doing so could open the door to downgrade attacks where a malicious actor who is able to intercept the connection could modify the requested protocol version and downgrade it to a less secure version.
+
+
 ## Summary of Key Findings
 
 
