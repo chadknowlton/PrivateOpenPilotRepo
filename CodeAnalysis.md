@@ -14,6 +14,7 @@ In exploring how to analyze the C code of Openpilot, we had also found success u
 ## Findings From Code Review
 SonarCloud Scan Results: https://sonarcloud.io/summary/overall?id=Rafterman29_openpilot
 
+## 
 
 ### CWE-200: Exposure of Sensitive Information to an Unauthorized Actor
 Link: https://cwe.mitre.org/data/definitions/200.html
@@ -32,6 +33,7 @@ Code Review Source:
 In our automated scan of python scripts through SonarCloud, one concerning result returned was the use of mapped `http` addresses. This corresponds to CWE-200: Exposure of Sensitive Information to an Unauthorized Actor. Our results suggested use to ask whether our application data transits over a network that is considered untrusted, and whether
 compliance rules require the service to encrypt data in transit. Both of which we answered yes to.We recommned mapping these return functuons to `https` addresses to mitigate sensitive information being transmitted through insecure channels. 
 
+##
 
 ### CWE-732: Incorrect Permission Assignment for Critical Resource
 Link: https://cwe.mitre.org/data/definitions/732.html
@@ -56,6 +58,8 @@ This CWE states that " The product specifies permissions for a security-critical
 
 We determined that this identified risk was relatively acceptable within Openpilot, given where the risk was identified and its implementation. The resource file in question is a tera renderer utility which lets anybody read and execute the file, but only allows for the owner to write to it. Since the file will be running in a context which is neither a multi-user environment nor does it contain any confidential  information, it is acceptable for everyone to read it.  
 
+## 
+
 ### CWE-259: Use of Hard-coded Password
 Link: https://cwe.mitre.org/data/definitions/259.html
 
@@ -73,6 +77,7 @@ QString adapter;  // Path to network manager wifi-device
   
  The use of a hard-code password could lead to a high risk of authentication failure within the system. This vulnerbaility was security issue was detected within  `selfdrive/ui/qt/offroad/wifiManager.h`. OpenPilot software is risk of credential leakage since this source is used within the production enviroment. Leakage or altering of these credentials could further lead the end user to have snesitive information leaked to the API service. Removal of the hard-coded password is strongly recommended. 
  
+## 
 
 ### CWE-326: Inadequate Encryption Strength
 Link: https://cwe.mitre.org/data/definitions/326.html
