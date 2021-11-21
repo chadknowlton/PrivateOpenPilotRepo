@@ -1,12 +1,13 @@
-CYBR-8420: Software Assurance
+# CYBR-8420: Software Assurance
 
-Current list of roles:
-Jose - Technical
-Kyle - Writing
-Chad - Administrator
-Dip  - Reviewing
-Jack - Team Lead
+## Group 1
+#### Jose - Technical
+#### Kyle - Writing
+#### Chad - Administrator
+#### Dip  - Reviewing
+#### Jack - Team Lead
 
-All - Assisting Peers
-
-Project Proposal Task - Plan on working together to fill out all of the required sections of the proposal.
+* [Project Proposal](Project_Proposal.md)
+* [Requirements for Software Security Engineering](Requirements_for_SSE.md)
+* [Assurance Cases for Software Security Engineering](AssuranceCases.md)
+* [Designing for Software Security Engineering]
