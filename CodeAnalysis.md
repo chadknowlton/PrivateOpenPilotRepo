@@ -112,7 +112,50 @@ memcpy(&chunk[tail_size], &data[i+1], chunk_len);
 memcpy(tail, &chunk[pos], tail_size);
 ```
 
-The automated scanner detected these code snippets within `selfdrive/boardd/panda.cc` due to a memory copying function, `memcpy` overflowing the destination buffer. It is recommended that memory should be explicitly bound. Failure in doing so could open the door to could lead to a buffer overflow attack where a malicious actor could read memory, execute arbitrary code, or even perform a denial of service attack
+The automated scanner detected these code snippets within `selfdrive/boardd/panda.cc` due to a memory copying function, `memcpy` overflowing the destination buffer. It is recommended that memory should be explicitly bound. Failure in doing so could open the door to a malicious acto cause a buffer overflow attack where they coud then read memory, execute arbitrary code, or even perform a denial of service attack
+
+### CWE-401: Missing Release of Memory after Effective Lifetime
+Link: https://cwe.mitre.org/data/definitions/401.html
+
+Code Review Source:
+* https://sonarcloud.io/project/issues?cwe=401&id=Rafterman29_openpilot&open=AX0_TGoFgvHzTIyGNIDR&resolved=false&severities=BLOCKER
+* https://sonarcloud.io/project/issues?cwe=401&id=Rafterman29_openpilot&open=AX0_TGkygvHzTIyGNH9H&resolved=false&severities=BLOCKER
+
+```
+QObject::connect(repeater, &RequestRepeater::receivedResponse, [=](QString resp) {
+        if (resp != "null") {
+          if (params.get("NavDestination").empty()) {
+            qWarning() << "Setting NavDestination from /next" << resp;
+            params.put("NavDestination", resp.toStdString());
+          } else {
+            qWarning() << "Got location from /next, but NavDestination already set";
+          }
+          // Send DELETE to clear destination server side
+          deleter->sendRequest(url, HttpRequest::Method::DELETE);
+        }
+      });
+```
+```
+  setStyleSheet(QString(R"(
+    QPushButton {
+      font-size: 75px;
+      margin-left: %1px;
+      margin-right: %1px;
+      margin-top: %2px;
+      margin-bottom: %2px;
+      padding: 0px;
+      border-radius: 10px;
+      color: #dddddd;
+      background-color: #444444;
+    }
+    QPushButton:pressed {
+      background-color: #333333;
+    }
+  )").arg(key_spacing_vertical / 2).arg(key_spacing_horizontal / 2));
+}
+```
+
+The automated scanner detected these code snippets within `selfdrive/ui/qt/maps/map_settings.cc` and `selfdrive/ui/qt/widgets/keyboard.cc` due to memory not being released after it is no longer in use. It is recommended that memory is allocated and freed within the same function. Failure in doing so could open the door to a malicious actor to trigger a memory leak and launch a denial of service attack.
 
 ## Summary of Key Findings
 
