@@ -23,15 +23,14 @@ Code Review Source:
 * https://sonarcloud.io/project/security_hotspots?id=Rafterman29_openpilot&hotspots=AX0lk5uiEafnvRiIF-C4
 * https://sonarcloud.io/project/security_hotspots?id=Rafterman29_openpilot&hotspots=AX0lk5uiEafnvRiIF-C5
 
-
-In our automated scan of python scripts through SonarCloud, one concerning result returned was the use of mapped `http` addresses. This corresponds to CWE-200: Exposure of Sensitive Information to an Unauthorized Actor. Our results suggested use to ask whether our application data transits over a network that is considered untrusted, and whether
-compliance rules require the service to encrypt data in transit. Both of which we answered yes to.We recommned mapping these return functuons to `https` addresses to mitigate sensitive information being transmitted through insecure channels. 
-
 #### athnad.py
 ` if r.status_code == 302 and r.headers['Location'].startswith("http://u.web2go.com"):` 
 
 #### helpers.py
 `requests.put(f'http://{host}:{port}/qlog.bz2', data='')` and ` return func(*args, f'http://{host}:{port}', **kwargs)` 
+
+In our automated scan of python scripts through SonarCloud, one concerning result returned was the use of mapped `http` addresses. This corresponds to CWE-200: Exposure of Sensitive Information to an Unauthorized Actor. Our results suggested use to ask whether our application data transits over a network that is considered untrusted, and whether
+compliance rules require the service to encrypt data in transit. Both of which we answered yes to.We recommned mapping these return functuons to `https` addresses to mitigate sensitive information being transmitted through insecure channels. 
 
 
 ### CWE-732: Incorrect Permission Assignment for Critical Resource
@@ -52,11 +51,28 @@ Code Review Source:
     msg_cancel += manual_install
     msg_cancel += "Once installed re-run your script.\n\n"
 ```
-
+ 
 This CWE states that " The product specifies permissions for a security-critical resource in a way that allows that resource to be read or modified by unintended actors." This risk was identified as a possibility within the `utils.py` file located in `\pyextra\acados_template`. On line 181 chmod is used to assign file read/write/execute permissions to user groups, and secure coding practices specify that the most restrictive permissions possible should be assigned to files and directories. Assigning less restrictive permissions can lead to unintended access to critical resource files. 
 
 We determined that this identified risk was relatively acceptable within Openpilot, given where the risk was identified and its implementation. The resource file in question is a tera renderer utility which lets anybody read and execute the file, but only allows for the owner to write to it. Since the file will be running in a context which is neither a multi-user environment nor does it contain any confidential  information, it is acceptable for everyone to read it.  
 
+### CWE-259: Use of Hard-coded Password
+Link: https://cwe.mitre.org/data/definitions/259.html
+
+Code Review Source:
+* https://sonarcloud.io/project/security_hotspots?id=Rafterman29_openpilot&hotspots=AX0_TGjHgvHzTIyGNH5H
+
+```
+QString adapter;  // Path to network manager wifi-device
+  QDBusConnection bus = QDBusConnection::systemBus();
+  unsigned int raw_adapter_state;  // Connection status https://developer.gnome.org/NetworkManager/1.26/nm-dbus-types.html#NMDeviceState
+  QString connecting_to_network;
+  QString tethering_ssid;
+  const QString defaultTetheringPassword = "swagswagcomma";
+  ```
+  
+ The use of a hard-code password could lead to a high risk of authentication failure within the system. This vulnerbaility was security issue was detected within  `selfdrive/ui/qt/offroad/wifiManager.h`. OpenPilot software is risk of credential leakage since this source is used within the production enviroment. Leakage or altering of these credentials could further lead the end user to have snesitive information leaked to the API service. Removal of the hard-coded password is strongly recommended. 
+ 
 
 ## Summary of Key Findings
 
