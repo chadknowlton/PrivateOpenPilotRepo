@@ -209,7 +209,7 @@ Overall, most of the code for this system is written in C and C++ so most of the
 Finally, there is one major issue in regard to security and that is how the python scripts are approached. In our automated scan we found 86 possible Command Injection vulnerabilities and 51 possible Weak Cryptography vulnerabilities and most of them were found within the python scripts for this system. This is due to arbitrary calls to the OS class in python which opens up a new shell prompt which has the possibility of leading to a command injection. Since there are so many instances of this occurring there should be a large code review in order to ensure that if these operating system calls are needed that they are secure and cannot be interrupted by an outside, unauthorized instance.
 
 ## Contributions to OpenPilot
-Link to OpenPilot Contribution Page: https://github.com/commaai/openpilot/blob/7746130a1e68ea2b8b0c781effb344f1edb207bc/docs/CONTRIBUTING.md
+OpenPilot Contribution Page: https://github.com/commaai/openpilot/blob/7746130a1e68ea2b8b0c781effb344f1edb207bc/docs/CONTRIBUTING.md
 
 
 ## Project Board
