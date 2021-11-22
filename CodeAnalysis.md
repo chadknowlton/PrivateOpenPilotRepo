@@ -177,6 +177,15 @@ In our automated scan of python scripts through SonarCloud, one concerning resul
 
 
 ## Summary of Key Findings
+Based on the results above, our team has picked some of the major CWEs that need to be addressed to imporve the overall secuirty of OpenPilot. 
+*
+
+*
+
+*
+
+*
+
 
 
 
@@ -200,6 +209,6 @@ Our first priority when it came to starting this assignmnet was finishing the we
 
 **Full Team:** Meet and discuss our **Contributions to OpenPilot** portion. 
 
-Our final goal was to have the document setup and finalized before our meeting with professor. Our team successfully setup our SonarCloud scanner, and documented the found CWE's as of 11/21. 
+Our final goal was to have the document setup and finalized before our meeting with professor. Our team successfully setup our SonarCloud scanner, and documented the found CWE's as of 11/21. From here, we were then able to summarize the CWEs that we felt would best contribute to the overall security of OpenPilot, and wrote out our **Summary of Key Findings**.
 
 As this is our final submission for the class, our team really wanted to get a head-start to give us time to breath and work through the assignmnet in close detail. Our communication strategy and approach in assigning roles has really helped us to a point in which we wished we had pursued this strategy earlier in the semester. To conclude, our communication, presence, and overall individual work has been excellent for this assignment. 
