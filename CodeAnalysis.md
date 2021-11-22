@@ -177,11 +177,11 @@ In our automated scan of python scripts through SonarCloud, one concerning resul
 
 
 ## Summary of Key Findings
-Based on the results above, our team has picked some of the major CWEs that need to be addressed to improve the overall security of OpenPilot. 
+After using SonarCloud to assist with the automated static code analysis for Openpilot, we have identified the following major CWEs. If addressed properly, implemented fixes in these areas stand to improve the security of the Openpilot software. 
 
-* 
+* CWE-200: Exposure of Sensitive Information to an Unauthorized Actor: Since http uses plaintext, it is easy for communications to be sniffed or tampered with by an attacker. SonarCloud identified at least three different locations where http was used within Openpilot. This is a vulnerability which could be avoided relatively easily by switching the transfer protocol of all external communications which currently use http to https.
 
-* 
+* CWE-326: Inadequate Encryption Strength: For transferring data via url, curl is used within Openpilot. To make sure that transfer is secure, it must be verified that the TLS version implemented is ≥ 1.2. Older versions allow for the TLS to be downgraded, opening the door for known security vulnerabilities which were fixed to be taken advantage of by an attacker.
 
 * 
  
