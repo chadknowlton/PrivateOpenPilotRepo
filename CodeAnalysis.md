@@ -177,18 +177,35 @@ In our automated scan of python scripts through SonarCloud, one concerning resul
 
 
 ## Summary of Key Findings
-After using SonarCloud to assist with the automated static code analysis for Openpilot, we have identified the following major CWEs. If addressed properly, implemented fixes in these areas stand to improve the security of the Openpilot software. 
+Based on the results above, our team has picked five major CWEs that need to be addressed to improve the overall security of OpenPilot. 
 
-* [CWE-200: Exposure of Sensitive Information to an Unauthorized Actor](https://cwe.mitre.org/data/definitions/200.html): Since http uses plaintext, it is easy for communications to be sniffed or tampered with by an attacker. SonarCloud identified at least three different locations where http was used within Openpilot. This is a vulnerability which could be avoided relatively easily by switching the transfer protocol of all external communications which currently use http to https.
+* ### CWE-200: Exposure of Sensitive Information to an Unauthorized Actor
+Link: https://cwe.mitre.org/data/definitions/200.html
 
-* [CWE-326: Inadequate Encryption Strength](https://cwe.mitre.org/data/definitions/326.html): For transferring data via url, curl is used within Openpilot. To make sure that transfer is secure, it must be verified that the TLS version implemented is ≥ 1.2. Older versions allow for the TLS to be downgraded, opening the door for known security vulnerabilities which were fixed to be taken advantage of by an attacker.
+This weakness is a very simple fix and allows for a significantly more secure system. 'https' addresses have built in security functionality that will help to mitigate sensitive data being accessed without authorization. Furthermore, the more complex the software becomes the more times these 'http' addresses will be referenced. Therefore, it is more secure to simply replace all 'http' references with 'https' references.
 
-* 
+* ### CWE-259: Use of Hard-coded Password
+Link: https://cwe.mitre.org/data/definitions/259.html
+Having a hard-coded password can lead to extremely damaging sensitive data leaks. By having access to these hard-coded passwords it would be very simple for an unauthorized user to be able to modify or retrieve sensitive user data. This can be easily fixed by either encrypting the password or outright removing it from the code. In order to further improved security measurements, Two-Factor Authentication and encryption are two examples of some fixes that could be applied to this sensitivity in order to remove the hard-coded password and improve the overall security of the system.
  
-* 
+* ### CWE-326: Inadequate Encryption Strength
+Link: https://cwe.mitre.org/data/definitions/326.html
 
+As described in the previous sensitivity, encryption is incredible important for maintaining security. However, simply having encryption is not enough and having easy to decrypt encryption is essentially the same as having no encryption when it comes to sensitive information like passwords. Therefore, although it may be difficult, a more complex encryption process should be utilized such as enforcing TLS 1.2 and disallowing TLS 1.0.
 
+### CWE-327: Use of a Broken or Risky Cryptographic Algorithm
+Link: https://cwe.mitre.org/data/definitions/327.html
 
+Related to the previous sensitivity, an outdated or "solved" hashing algorithm is extremely dangerous because if someone was to become aware that this software is using this outdated (or "solved") 'sha1 algorithm' then it'll be very simple for them to obtain the raw data as an unauthorized user. It is recommended to upgrade to 'SHA-256' instead of 'SHA-1' to hash the value. This is a relatively simple change with extremely helpful security changes.
+
+### CWE-401: Missing Release of Memory after Effective Lifetime
+Link: https://cwe.mitre.org/data/definitions/401.html
+
+Finally, the OpenPilot code has multiple instances in which memory is not being relased after it is no longer being used. Memory needs to be allocated and freed within the same function, however, many instances fail to do this. As a result, a malicious actor can bypass security through buffer overflows, memory leaks, denial of service attacks, and more. Although it is not quick to make this change, it is simple and once all memory has been properly allocated and freed then most of these possible memory leaks will be prevented.
+
+Overall, most of the code for this system is written in C and C++ so most of the vulnerabilities outlined are general vulnerabilities that are common for these two languages (e.g. memory leaks and outdated functions). The system is overall very secure and any vulnerabilities, for the most part, are not extremely concerning. However, there should be an overhaul of the code in order to update and outdated/deprecated functions that are being utilized and general coding practices with C should be more rigidly maintained. Beyond this, many of the bugs that are Sonarcloud automated review found were of little to no concern. Other than the major vulnerabilities listed above, many of these involved small issues that are more grammatical than anything (such as a break statement not being executed or a value initially being undefined).
+
+Finally, there is one major issue in regards to security and that is how the python scripts are approached. In our automated scan we found 86 possible Command Injection vulnerabilities and 51 possible Weak Cryptography vulnerabilities and most of them were found within the python scripts for this system. This is due to arbitrary calls to the OS class in python which opens up a new shell prompt which has the possibility of leading to a command injection. Since there are so many instances of this occurring there should be a large code review in order to ensure that if these operating system calls are needed that they are secure and cannot be interrupted by an outside, unauthorized instance.
 
 ## Contributions to OpenPilot
 
