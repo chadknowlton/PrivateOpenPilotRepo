@@ -157,6 +157,21 @@ QObject::connect(repeater, &RequestRepeater::receivedResponse, [=](QString resp)
 
 The automated scanner detected these code snippets within `selfdrive/ui/qt/maps/map_settings.cc` and `selfdrive/ui/qt/widgets/keyboard.cc` due to memory not being released after it is no longer in use. It is recommended that memory is allocated and freed within the same function. Failure in doing so could open the door to a malicious actor to trigger a memory leak and launch a denial of service attack.
 
+## 
+
+### CWE-327: Use of a Broken or Risky Cryptographic Algorithm
+Link: https://cwe.mitre.org/data/definitions/327.html
+
+Code Review Source:
+* https://sonarcloud.io/project/security_hotspots?id=Rafterman29_openpilot&hotspots=AX0lk5y0EafnvRiIF-E9
+* https://sonarcloud.io/project/security_hotspots?id=Rafterman29_openpilot&hotspots=AX0lk5uqEafnvRiIF-DD
+
+#### athnad.py
+`  upload_id = hashlib.sha1(str(item).encode()).hexdigest()` 
+
+In our automated scan of python scripts through SonarCloud, one concerning result returned was the use of the `sha1 algorithm` to hash the data. It corresponds to CWE-327: Use of a Broken or Risky Cryptographic Algorithm. `SHA-1` is no longer considered secure, and we can calculate the hash value with little computational effort. We recommend using `SHA-256` to hash the value. 
+##
+
 ## Summary of Key Findings
 
 
