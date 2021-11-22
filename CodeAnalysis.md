@@ -179,16 +179,17 @@ In our automated scan of python scripts through SonarCloud, one concerning resul
 ## Summary of Key Findings
 Based on the results above, our team has picked five major CWEs that need to be addressed to improve the overall security of OpenPilot. 
 
-* ### CWE-200: Exposure of Sensitive Information to an Unauthorized Actor
+### CWE-200: Exposure of Sensitive Information to an Unauthorized Actor
 Link: https://cwe.mitre.org/data/definitions/200.html
 
 This weakness is a very simple fix and allows for a significantly more secure system. 'https' addresses have built in security functionality that will help to mitigate sensitive data being accessed without authorization. Furthermore, the more complex the software becomes the more times these 'http' addresses will be referenced. Therefore, it is more secure to simply replace all 'http' references with 'https' references.
 
-* ### CWE-259: Use of Hard-coded Password
+### CWE-259: Use of Hard-coded Password
 Link: https://cwe.mitre.org/data/definitions/259.html
+
 Having a hard-coded password can lead to extremely damaging sensitive data leaks. By having access to these hard-coded passwords it would be very simple for an unauthorized user to be able to modify or retrieve sensitive user data. This can be easily fixed by either encrypting the password or outright removing it from the code. In order to further improved security measurements, Two-Factor Authentication and encryption are two examples of some fixes that could be applied to this sensitivity in order to remove the hard-coded password and improve the overall security of the system.
  
-* ### CWE-326: Inadequate Encryption Strength
+### CWE-326: Inadequate Encryption Strength
 Link: https://cwe.mitre.org/data/definitions/326.html
 
 As described in the previous sensitivity, encryption is incredibly important for maintaining security. However, simply having encryption is not enough and having easy to decrypt encryption is essentially the same as having no encryption when it comes to sensitive information like passwords. Therefore, although it may be difficult, a more complex encryption process should be utilized such as enforcing TLS 1.2 and disallowing TLS 1.0.
