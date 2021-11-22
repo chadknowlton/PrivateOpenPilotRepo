@@ -98,6 +98,8 @@ size_t getRemoteFileSize(const std::string &url) {
 
 The automated scanner detected these code snippets within `selfdrive/ui/replay/util.cc` due to an inadequate TLS version being used. It is recommended to enforce TLS 1.2 as the minimum protocol version and disallow versions like TLS 1.0. Failure in doing so could open the door to downgrade attacks where a malicious actor who is able to intercept the connection could modify the requested protocol version and downgrade it to a less secure version.
 
+## 
+
 ### CWE-119: Improper Restriction of Operations within the Bounds of a Memory Buffer
 Link: https://cwe.mitre.org/data/definitions/119.html
 
@@ -113,6 +115,8 @@ memcpy(tail, &chunk[pos], tail_size);
 ```
 
 The automated scanner detected these code snippets within `selfdrive/boardd/panda.cc` due to a memory copying function, `memcpy` overflowing the destination buffer. It is recommended that memory should be explicitly bound. Failure in doing so could open the door to a malicious acto cause a buffer overflow attack where they coud then read memory, execute arbitrary code, or even perform a denial of service attack
+
+## 
 
 ### CWE-401: Missing Release of Memory after Effective Lifetime
 Link: https://cwe.mitre.org/data/definitions/401.html
@@ -170,7 +174,7 @@ Code Review Source:
 `  upload_id = hashlib.sha1(str(item).encode()).hexdigest()` 
 
 In our automated scan of python scripts through SonarCloud, one concerning result returned was the use of the `sha1 algorithm` to hash the data. It corresponds to CWE-327: Use of a Broken or Risky Cryptographic Algorithm. `SHA-1` is no longer considered secure, and we can calculate the hash value with little computational effort. We recommend using `SHA-256` to hash the value. 
-##
+
 
 ## Summary of Key Findings
 
