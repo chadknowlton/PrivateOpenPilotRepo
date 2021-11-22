@@ -177,7 +177,7 @@ In our automated scan of python scripts through SonarCloud, one concerning resul
 
 
 ## Summary of Key Findings
-Based on the results above, our team has picked some of the major CWEs that need to be addressed to imporve the overall secuirty of OpenPilot. 
+Based on the results above, our team has picked some of the major CWEs that need to be addressed to improve the overall security of OpenPilot. 
 
 * 
 
