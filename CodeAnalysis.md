@@ -208,8 +208,8 @@ Overall, most of the code for this system is written in C and C++ so most of the
 
 Finally, there is one major issue in regard to security and that is how the python scripts are approached. In our automated scan we found 86 possible Command Injection vulnerabilities and 51 possible Weak Cryptography vulnerabilities and most of them were found within the python scripts for this system. This is due to arbitrary calls to the OS class in python which opens up a new shell prompt which has the possibility of leading to a command injection. Since there are so many instances of this occurring there should be a large code review in order to ensure that if these operating system calls are needed that they are secure and cannot be interrupted by an outside, unauthorized instance.
 
-## Contributions to OpenPilot
-OpenPilot Contribution Page: https://github.com/commaai/openpilot/blob/7746130a1e68ea2b8b0c781effb344f1edb207bc/docs/CONTRIBUTING.md
+## Ongoing and Future Contributions to OpenPilot
+Our team felt the way in which OpenPilot allows users to submit contributions was abit unique and felt the process needed some explanation. For reference, the document OpenPilot requests users to follow can be found [here](https://github.com/commaai/openpilot/blob/7746130a1e68ea2b8b0c781effb344f1edb207bc/docs/CONTRIBUTING.md). OpenPilot first requests users to join there [Discord](https://discord.comma.ai/). From here, the `bug-report` channel contains a process from a user to follow before submitting a bug. For the sake of submitting coding errors after our analysis, we settled to report our findings via the [issue page](https://github.com/commaai/openpilot/issues). Our submitted reports below. 
 
 
 ## Project Board
