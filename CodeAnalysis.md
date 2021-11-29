@@ -175,6 +175,18 @@ Code Review Source:
 
 In our automated scan of python scripts through SonarCloud, one concerning result returned was the use of the `sha1 algorithm` to hash the data. It corresponds to CWE-327: Use of a Broken or Risky Cryptographic Algorithm. `SHA-1` is no longer considered secure, and we can calculate the hash value with little computational effort. We recommend using `SHA-256` to hash the value. 
 
+## 
+
+### CWE-283: Unverified Ownership
+Link: https://cwe.mitre.org/data/definitions/283.html
+
+Code Review Source:
+* https://sonarcloud.io/project/security_hotspots?id=Rafterman29_openpilot&hotspots=AX0lk5gtEafnvRiIF96c
+
+#### process.py
+`   os.kill(self.proc.pid, sig)` 
+
+In our automated scan of python scripts through SonarCloud, one result returned was the use of the 'os.kill'. SonarClooud considers this sensitive adn suggests checking user permissions and securing the source before sending the command to kill the process. For example, the signal could be sent via a world-writable file.
 
 ## Summary of Key Findings
 Based on the results above, our team has picked five major CWEs that need to be addressed to improve the overall security of OpenPilot. 
