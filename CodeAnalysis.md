@@ -188,6 +188,19 @@ Code Review Source:
 
 In our automated scan of python scripts through SonarCloud, one result returned was the use of the 'os.kill'. SonarClooud considers this sensitive adn suggests checking user permissions and securing the source before sending the command to kill the process. For example, the signal could be sent via a world-writable file.
 
+## 
+
+### CWE-120: Buffer Copy without Checking Size of Input ('Classic Buffer Overflow')
+Link: https://cwe.mitre.org/data/definitions/120.html
+
+Code Review Source:
+* https://sonarcloud.io/project/security_hotspots?id=Rafterman29_openpilot&hotspots=AX0_TGU2gvHzTIyGNHZS
+
+#### fontstash.h
+`   strncpy(font->name, name, sizeof(font->name));` 
+
+In our automated scan of python scripts through SonarCloud, one result returned was the use of the 'strncpy'.The function `char *strncpy(char * restrict dest, const char * restrict src, size_t count);` copies the first count characters from src to dest, stopping at the first `null` character, and filling extra space with `0`. The wcsncpy does the same for wide characters and should be used with the same guidelines.The function, `strncpy` was designed to work with fixed-length strings and might result in a non-null-terminated string. Problems may arise given the possibility that either the source or the destination pointer is null, or if there is an overlap between the source and the destination.
+
 ## Summary of Key Findings
 Based on the results above, our team has picked five major CWEs that need to be addressed to improve the overall security of OpenPilot. 
 
