@@ -9,7 +9,11 @@ In order for SonarCloud to correctly analyze C/C++/Objective-C code it needs to 
 
 In exploring how to analyze the C code of OpenPilot, we had also found success using Visual Code Grepper (VCG). Since Visual Code Grepper performs a static code analysis, it didn’t require for the C files to be compiled before carrying out a scan. For this analysis tool, we downloaded the 0.8.10 release build of OpenPilot and VCG version 2.2.0. Once installed, the GUI of VCG allowed us to select the target directory where the Openpilot-0.8.10 root folder was located locally on the machine, perform a full scan on it, and export the table summarizing its findings as a csv file.
 
-
+Finally, our team is looking for vulnerabilities in relation to our findgins within our design and assurance cases from the previous submissions. Specifically, we will be looking for vulnerbailities in relation to...
+* The Panda Safety Package. 
+* Logging tasks.
+* Remote execution.
+* Denial of service attacks.
 
 ## Findings From Code Review
 SonarCloud Scan Results: https://sonarcloud.io/summary/overall?id=Rafterman29_openpilot
