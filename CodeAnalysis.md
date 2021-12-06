@@ -264,6 +264,22 @@ Since it would take much longer than the remaining weeks to completely resolve t
 
 Issue contributed can be found [here](https://github.com/commaai/openpilot/issues/23026).
 
+### Responses from the Community
+CWE-200:
+* athenad. We detect a redirect towards this http url here, we don't actually visit that url.
+* athenad/tests/helpers.py. This is a test which verifies uploads work on localhost. No actual data is sent here
+
+CWE-732: This is in an install script of a third party dependency. Not relevant since we just ship the files already
+
+CWE-259: Agreed this isn't super clean. Hotspot isn't on by default and most people will change the password before turning it on. But even with the hotspot password known you still need the correct SSH credentials to login.
+
+CWE-326: Only used in replay tools. Not an issue.
+
+CWE-119: Addressed in previous comments
+
+CWE-401: These are scanner false positives. If you create Qt objects with the parent object passed in the constructor (or add them to a layout) it wil manage memory automatically.
+
+CWE-327: See above, hashes are not used for cryptographic purposes
 
 ## Project Board
 Link to team project board: https://github.com/chadknowlton/PrivateOpenPilotRepo/projects/4
