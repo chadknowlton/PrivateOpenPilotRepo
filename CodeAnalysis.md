@@ -257,7 +257,7 @@ Finally, there is one major issue in regard to security and that is how the pyth
 Our team felt the way in which OpenPilot allows users to submit contributions was abit unique and felt the process needed some explanation. For reference, the document OpenPilot requests users to follow can be found [here](https://github.com/commaai/openpilot/blob/7746130a1e68ea2b8b0c781effb344f1edb207bc/docs/CONTRIBUTING.md). OpenPilot first requests users to join their [Discord](https://discord.comma.ai/). From here, the `bug-report` channel contains a process from a user to follow before submitting a bug. For the sake of submitting coding errors after our analysis, we settled to report our findings via the [issue page](https://github.com/commaai/openpilot/issues). 
 
 ![bug-reports-discord](https://user-images.githubusercontent.com/57100645/144871198-c911b4f0-9c37-45d9-bf2c-85c98f4a4e06.png)
-** Screenshot of the bug-reports module in the comma.ai community Discord **
+**Screenshot of the bug-reports module in the comma.ai community Discord**
 
 Since it would take much longer than the remaining weeks to completely resolve the vulnerabilities we have found, we decided to share our results in the previously mentioned issue page where we linked our SonarCloud scan. This is in hopes that others will be able to update the code in our stead in the future. Otherwise, if any of us have the time in the future beyond this semester we may contribute these changes ourselves.
 
